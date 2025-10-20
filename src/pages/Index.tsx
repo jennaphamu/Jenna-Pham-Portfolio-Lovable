@@ -25,7 +25,7 @@ const Index = () => {
             <h1 className="heading-lg mb-6 font-sans">
               PERSPECTIVE IS A SPACE FOR EXPLORING IDEAS, FINDING INSPIRATION, AND DISCOVERING NEW WAYS OF SEEING THE WORLD.
             </h1>
-            <p className="text-lg md:text-xl leading-relaxed text-foreground/80 max-w-3xl mx-auto mb-8">
+            <p className="text-lg md:text-xl leading-relaxed text-foreground/80 max-w-3xl mx-auto mb-8 font-serif">
               From mindful living and personal growth to travel experiences and creative pursuits, 
               we share perspectives that enrich daily life. Join us as we explore topics that inspire 
               curiosity and meaningful conversation.

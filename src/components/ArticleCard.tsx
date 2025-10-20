@@ -26,13 +26,13 @@ const ArticleCard = ({ title, excerpt, date, image, slug, colorClass = "bg-vibra
 
         {/* Content */}
         <div className="p-5 md:p-6 flex flex-col flex-1">
-          <time className="text-xs md:text-sm font-medium text-foreground/70 mb-3 block font-sans">
+          <time className="text-sm font-medium text-foreground/70 mb-3 block font-sans">
             {date}
           </time>
-          <h2 className="font-black text-xl md:text-2xl uppercase tracking-tight leading-tight mb-3 font-sans">
+          <h2 className="heading-md leading-tight mb-3 font-sans">
             {title}
           </h2>
-          <p className="text-sm md:text-base leading-relaxed text-foreground/80 mb-4 flex-1 line-clamp-3">
+          <p className="text-sm md:text-base leading-relaxed text-foreground/80 mb-4 flex-1 line-clamp-3 font-serif">
             {excerpt}
           </p>
           <button className="bg-primary hover:bg-primary-hover border-2 border-foreground text-foreground uppercase font-bold text-xs py-2 px-5 rounded-full inline-flex items-center gap-1.5 transition-all duration-200 self-start font-sans">

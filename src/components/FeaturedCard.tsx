@@ -21,10 +21,10 @@ const FeaturedCard = ({ title, excerpt, date, image, slug, colorClass = "bg-vibr
             <time className="text-sm md:text-base font-medium text-foreground/70 mb-4 block font-sans">
               {date}
             </time>
-            <h2 className="font-black text-3xl md:text-4xl lg:text-5xl uppercase tracking-tight leading-tight mb-4 font-sans">
+            <h2 className="heading-lg mb-4 font-sans">
               {title}
             </h2>
-            <p className="text-base md:text-lg leading-relaxed text-foreground/80 mb-6">
+            <p className="text-base md:text-lg leading-relaxed text-foreground/80 mb-6 font-serif">
               {excerpt}
             </p>
             <button className="bg-primary hover:bg-primary-hover border-2 border-foreground text-foreground uppercase font-bold text-sm py-3 px-6 rounded-full inline-flex items-center gap-2 transition-all duration-200 self-start font-sans">

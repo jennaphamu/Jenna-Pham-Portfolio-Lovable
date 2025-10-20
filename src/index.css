@@ -1,96 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800;900&family=Lora:wght@400;500;600;700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
-All colors MUST be HSL.
-*/
+/* Perspective Blog Design System - Warm & Vibrant */
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
-
-    --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
-
-    --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
-
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
-
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
-
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
-
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
-
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
-
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
-
-    --radius: 0.5rem;
-
-    --sidebar-background: 0 0% 98%;
-
-    --sidebar-foreground: 240 5.3% 26.1%;
-
-    --sidebar-primary: 240 5.9% 10%;
-
-    --sidebar-primary-foreground: 0 0% 98%;
-
-    --sidebar-accent: 240 4.8% 95.9%;
-
-    --sidebar-accent-foreground: 240 5.9% 10%;
-
-    --sidebar-border: 220 13% 91%;
-
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    /* Base Colors - Warm Cream Theme */
+    --background: 32 71% 91%; /* #fce5cf - Warm cream */
+    --foreground: 0 0% 0%; /* Pure black */
+    
+    /* Card Colors */
+    --card: 32 71% 91%;
+    --card-foreground: 0 0% 0%;
+    
+    /* Primary Action Colors */
+    --primary: 322 82% 83%; /* #f7b0e0 - Lavender */
+    --primary-foreground: 0 0% 0%;
+    --primary-hover: 29 100% 50%; /* #fc8500 - Orange */
+    
+    /* Secondary Actions */
+    --secondary: 288 38% 40%; /* #7C3F8D - Deep Purple */
+    --secondary-foreground: 0 0% 100%;
+    --secondary-hover: 288 38% 32%; /* #6B3678 - Purple Hover */
+    
+    /* Accent Colors */
+    --accent-red: 16 100% 50%; /* #ff5400 */
+    --accent-pink: 332 100% 73%; /* #ff75ba */
+    
+    /* Vibrant Card Backgrounds */
+    --card-yellow: 45 91% 62%; /* #F6C744 */
+    --card-purple: 273 61% 78%; /* #C8A8E9 */
+    --card-magenta: 321 68% 57%; /* #D946A0 */
+    --card-blue: 199 92% 73%; /* #7DD3FC */
+    --card-coral: 349 89% 72%; /* #FB7185 */
+    --card-mint: 156 72% 67%; /* #6EE7B7 */
+    --card-orange: 24 90% 61%; /* #FB923C */
+    --card-lavender: 248 84% 84%; /* #C4B5FD */
+    
+    /* Dark Mode Colors */
+    --dark-background: 20 18% 16%; /* #2D2520 */
+    --dark-card: 20 14% 25%; /* #4A3F37 */
+    --dark-muted: 20 12% 37%; /* #6B5D52 */
+    
+    /* Status Colors */
+    --success: 158 64% 52%; /* #10b981 */
+    --warning: 38 92% 50%; /* #f59e0b */
+    --error: 0 84% 60%; /* #ef4444 */
+    --info: 188 86% 43%; /* #06b6d4 */
+    
+    /* UI Elements */
+    --border: 0 0% 0%;
+    --input: 0 0% 0%;
+    --ring: 288 38% 40%;
+    --radius: 1.5rem;
+    
+    /* Transitions */
+    --transition-fast: 150ms ease-in-out;
+    --transition-medium: 300ms ease-in-out;
+    --transition-slow: 500ms cubic-bezier(0.34, 1, 0.64, 1);
   }
 
   .dark {
-    --background: 222.2 84% 4.9%;
-    --foreground: 210 40% 98%;
-
-    --card: 222.2 84% 4.9%;
-    --card-foreground: 210 40% 98%;
-
-    --popover: 222.2 84% 4.9%;
-    --popover-foreground: 210 40% 98%;
-
-    --primary: 210 40% 98%;
-    --primary-foreground: 222.2 47.4% 11.2%;
-
-    --secondary: 217.2 32.6% 17.5%;
-    --secondary-foreground: 210 40% 98%;
-
-    --muted: 217.2 32.6% 17.5%;
-    --muted-foreground: 215 20.2% 65.1%;
-
-    --accent: 217.2 32.6% 17.5%;
-    --accent-foreground: 210 40% 98%;
-
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 210 40% 98%;
-
-    --border: 217.2 32.6% 17.5%;
-    --input: 217.2 32.6% 17.5%;
-    --ring: 212.7 26.8% 83.9%;
-    --sidebar-background: 240 5.9% 10%;
-    --sidebar-foreground: 240 4.8% 95.9%;
-    --sidebar-primary: 224.3 76.3% 48%;
-    --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 240 3.7% 15.9%;
-    --sidebar-accent-foreground: 240 4.8% 95.9%;
-    --sidebar-border: 240 3.7% 15.9%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    --background: 20 18% 16%; /* #2D2520 */
+    --foreground: 32 71% 91%; /* #fce5cf */
+    --card: 20 14% 25%;
+    --card-foreground: 32 71% 91%;
+    --border: 20 12% 37%;
+    --input: 20 12% 37%;
   }
 }
 
@@ -101,5 +80,84 @@ All colors MUST be HSL.
 
   body {
     @apply bg-background text-foreground;
+    font-family: 'Lora', Georgia, serif;
+  }
+  
+  h1, h2, h3, h4, h5, h6, 
+  button, 
+  nav, 
+  .heading, 
+  .sans-serif {
+    font-family: 'DM Sans', system-ui, -apple-system, sans-serif;
+  }
+}
+
+@layer components {
+  /* Button Styles */
+  .btn-primary {
+    @apply bg-[hsl(var(--primary))] hover:bg-[hsl(var(--primary-hover))] 
+           border-2 border-foreground text-foreground uppercase font-bold 
+           py-3 px-7 rounded-full inline-flex items-center gap-2 
+           transition-all duration-200;
+    transition-timing-function: cubic-bezier(0.34, 1, 0.64, 1);
+  }
+  
+  .btn-secondary {
+    @apply border-2 border-[hsl(var(--secondary))] text-[hsl(var(--secondary))] 
+           hover:bg-[hsl(var(--secondary))] hover:text-white 
+           uppercase font-semibold py-3 px-7 rounded-full 
+           inline-flex items-center gap-2 transition-all duration-200;
+  }
+  
+  .btn-small {
+    @apply bg-[hsl(var(--primary))] hover:bg-[hsl(var(--primary-hover))] 
+           border-2 border-foreground text-foreground uppercase font-bold 
+           text-xs py-2 px-5 rounded-full inline-flex items-center gap-1.5 
+           transition-all duration-200;
+    transition-timing-function: cubic-bezier(0.34, 1, 0.64, 1);
+  }
+  
+  /* Card Hover Effect */
+  .card-hover {
+    @apply transition-transform duration-500 hover:scale-[1.02];
+    transition-timing-function: cubic-bezier(0.34, 1, 0.64, 1);
+  }
+  
+  /* Typography Styles */
+  .heading-xl {
+    @apply font-black text-6xl md:text-8xl lg:text-9xl uppercase 
+           tracking-tighter leading-[0.72];
+  }
+  
+  .heading-lg {
+    @apply font-extrabold md:font-black text-3xl md:text-5xl lg:text-6xl 
+           uppercase tracking-tighter leading-tight;
+  }
+  
+  .heading-md {
+    @apply font-bold text-2xl md:text-3xl uppercase tracking-tight;
+  }
+  
+  .heading-sm {
+    @apply font-bold text-xl uppercase tracking-tight;
+  }
+  
+  .nav-text {
+    @apply uppercase font-medium text-sm tracking-[1.8px];
+  }
+  
+  .body-text {
+    @apply font-normal leading-[1.25] text-[2rem] md:text-[3.2rem];
+    font-family: 'Lora', Georgia, serif;
+  }
+  
+  /* Footer Styles */
+  .footer-header {
+    @apply uppercase font-bold text-xs md:text-sm tracking-[1.8px] text-foreground mb-3 md:mb-4;
+  }
+  
+  .footer-link {
+    @apply underline decoration-2 text-sm md:text-base text-foreground 
+           hover:opacity-70 transition-opacity duration-200;
   }
 }

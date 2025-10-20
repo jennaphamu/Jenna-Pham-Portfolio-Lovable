@@ -2,6 +2,7 @@ import { useState } from "react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import ArticleCard from "@/components/ArticleCard";
+import FeaturedCard from "@/components/FeaturedCard";
 import Newsletter from "@/components/Newsletter";
 import Button from "@/components/Button";
 import { articles } from "@/data/articles";
@@ -47,7 +48,7 @@ const Index = () => {
 
         {/* Featured Card */}
         <section className="px-5 md:px-[90px] pb-8 md:pb-12">
-          <ArticleCard {...articles[0]} />
+          <FeaturedCard {...articles[0]} />
         </section>
 
         {/* Articles Grid */}

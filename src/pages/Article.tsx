@@ -1,9 +1,10 @@
 import { useParams, Link } from "react-router-dom";
-import { ArrowLeft, Calendar, Clock } from "lucide-react";
+import { Calendar, Clock } from "lucide-react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import ArticleCard from "@/components/ArticleCard";
 import Newsletter from "@/components/Newsletter";
+import Button from "@/components/Button";
 import { articles } from "@/data/articles";
 
 const Article = () => {
@@ -16,8 +17,10 @@ const Article = () => {
         <Header />
         <main className="px-5 md:px-[90px] py-20 text-center">
           <h1 className="heading-lg mb-6 font-sans">ARTICLE NOT FOUND</h1>
-          <Link to="/" className="text-secondary hover:underline font-sans uppercase font-bold">
-            Return to Homepage
+          <Link to="/">
+            <Button variant="outline" showArrow={false}>
+              Return to Homepage
+            </Button>
           </Link>
         </main>
         <Footer />
@@ -37,12 +40,10 @@ const Article = () => {
       <main>
         {/* Back Button */}
         <div className="px-5 md:px-[90px] pt-8">
-          <Link 
-            to="/" 
-            className="inline-flex items-center gap-2 text-secondary hover:underline font-sans uppercase font-bold text-sm"
-          >
-            <ArrowLeft className="w-4 h-4" />
-            BACK TO ARTICLES
+          <Link to="/">
+            <Button variant="secondary" showArrow={false}>
+              ← BACK TO ARTICLES
+            </Button>
           </Link>
         </div>
 
@@ -87,15 +88,19 @@ const Article = () => {
             {/* Article Content */}
             {article.content ? (
               <div 
-                className="prose prose-lg max-w-none prose-headings:font-sans prose-headings:uppercase prose-headings:font-bold prose-headings:tracking-tight prose-h2:text-2xl prose-h2:mt-8 prose-h2:mb-4 prose-p:leading-[1.25] prose-p:text-[1.75rem] md:prose-p:text-[2rem] prose-p:mb-6 prose-img:rounded-2xl"
+                className="prose prose-lg max-w-none font-serif
+                           prose-headings:font-sans prose-headings:uppercase prose-headings:font-bold prose-headings:tracking-tight 
+                           prose-h2:text-2xl prose-h2:mt-8 prose-h2:mb-4
+                           prose-p:text-lg md:prose-p:text-xl prose-p:leading-relaxed prose-p:mb-6
+                           prose-img:rounded-2xl prose-img:my-8"
                 dangerouslySetInnerHTML={{ __html: article.content }}
               />
             ) : (
-              <div className="space-y-6">
-                <p className="text-[1.75rem] md:text-[2rem] leading-[1.25]">
+              <div className="space-y-6 font-serif">
+                <p className="text-lg md:text-xl leading-relaxed">
                   {article.excerpt}
                 </p>
-                <p className="text-[1.75rem] md:text-[2rem] leading-[1.25]">
+                <p className="text-lg md:text-xl leading-relaxed">
                   This article explores the themes of mindful living, personal growth, and intentional practices that enrich our daily experiences.
                 </p>
               </div>

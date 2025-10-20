@@ -16,11 +16,11 @@ const ArticleCard = ({ title, excerpt, date, image, slug, colorClass = "bg-vibra
     <Link to={`/article/${slug}`} className="block">
       <article className={cn("card-hover rounded-3xl overflow-hidden flex flex-col h-full", colorClass)}>
         {/* Image */}
-        <div className="aspect-square overflow-hidden">
+        <div className="aspect-square overflow-hidden p-4 md:p-5">
           <img
             src={image}
             alt={title}
-            className="w-full h-full object-cover transition-transform duration-500"
+            className="w-full h-full object-cover transition-transform duration-500 rounded-2xl"
           />
         </div>
 
@@ -29,9 +29,9 @@ const ArticleCard = ({ title, excerpt, date, image, slug, colorClass = "bg-vibra
           <time className="text-xs md:text-sm font-medium text-foreground/70 mb-3 block font-sans">
             {date}
           </time>
-          <h3 className="font-bold text-base md:text-lg uppercase tracking-tight leading-tight mb-3 font-sans">
+          <h2 className="font-black text-xl md:text-2xl uppercase tracking-tight leading-tight mb-3 font-sans">
             {title}
-          </h3>
+          </h2>
           <p className="text-sm md:text-base leading-relaxed text-foreground/80 mb-4 flex-1 line-clamp-3">
             {excerpt}
           </p>

@@ -53,7 +53,7 @@ const Newsletter = ({ variant = "colorful" }: NewsletterProps) => {
   }
 
   return (
-    <section className="bg-vibrant-lavender py-16 md:py-20">
+    <section className="bg-accent-pink py-16 md:py-20">
       <div className="px-5 md:px-[90px] max-w-2xl mx-auto text-center">
         <h2 className="heading-md mb-4 font-sans">STAY INSPIRED.</h2>
         <p className="text-lg md:text-xl mb-8 font-serif leading-relaxed">

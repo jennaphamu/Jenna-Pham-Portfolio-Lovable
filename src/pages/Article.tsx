@@ -109,11 +109,13 @@ const Article = () => {
         </article>
 
         {/* Related Articles */}
-        <section className="px-5 md:px-[90px] py-12 md:py-16 border-t border-foreground/10">
-          <h2 className="heading-md mb-8 text-center font-sans">
-            YOU MIGHT ALSO LIKE
-          </h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 max-w-6xl mx-auto">
+        <section className="border-t border-foreground/10">
+          <div className="px-5 md:px-[90px] pt-12 md:pt-16 pb-8 md:pb-12">
+            <h2 className="heading-md mb-8 text-center font-sans">
+              YOU MIGHT ALSO LIKE
+            </h2>
+          </div>
+          <div className="grid grid-cols-2 md:grid-cols-3 p-5 gap-x-5 gap-y-[30px] md:pt-0 md:px-[90px] md:pb-[30px] md:gap-x-[60px] md:gap-y-[30px]">
             {relatedArticles.map((relatedArticle) => (
               <ArticleCard key={relatedArticle.id} {...relatedArticle} />
             ))}

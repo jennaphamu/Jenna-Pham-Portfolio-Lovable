@@ -23,12 +23,12 @@ const Index = () => {
         <section className="px-5 md:px-[90px] pt-12 md:pt-20 pb-8 md:pb-12">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="heading-lg mb-6 font-sans">
-              PERSPECTIVE IS A SPACE FOR EXPLORING IDEAS, FINDING INSPIRATION, AND DISCOVERING NEW WAYS OF SEEING THE WORLD.
+              WELCOME TO PERSPECTIVE: WHERE THOUGHTFUL LIVING MEETS CREATIVE EXPLORATION
             </h1>
             <p className="text-lg md:text-xl leading-relaxed text-foreground/80 max-w-3xl mx-auto mb-8 font-serif">
-              From mindful living and personal growth to travel experiences and creative pursuits, 
-              we share perspectives that enrich daily life. Join us as we explore topics that inspire 
-              curiosity and meaningful conversation.
+              I'm sharing my journey through wellness, travel, minimalist living, and creative pursuits. 
+              This is a space for slow mornings, sustainable choices, and finding beauty in simplicity. 
+              Join me as we explore what it means to live intentionally.
             </p>
             
             {/* Newsletter CTA */}

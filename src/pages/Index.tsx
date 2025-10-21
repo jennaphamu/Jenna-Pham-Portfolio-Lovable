@@ -11,26 +11,24 @@ const Index = () => {
   const [visibleArticles, setVisibleArticles] = useState(6);
 
   const loadMore = () => {
-    setVisibleArticles(prev => Math.min(prev + 3, articles.length));
+    setVisibleArticles((prev) => Math.min(prev + 3, articles.length));
   };
 
   return (
     <div className="min-h-screen bg-background">
       <Header />
-      
+
       <main>
         {/* Hero Section */}
         <section className="px-5 md:px-[90px] pt-12 md:pt-20 pb-8 md:pb-12">
           <div className="max-w-4xl mx-auto text-center">
-            <h1 className="heading-lg mb-6 font-sans">
-              WHERE STYLE MEETS SUBSTANCE: EXPLORING FASHION AS AN ART FORM
-            </h1>
+            <h1 className="heading-lg mb-6 font-sans">VESPER</h1>
             <p className="text-lg md:text-xl leading-relaxed text-foreground/80 max-w-3xl mx-auto mb-8 font-serif">
-              I'm a fashion curator sharing my passion for timeless style, sustainable design, and the stories behind what we wear. 
-              From building capsule wardrobes to discovering emerging designers, this is where we celebrate fashion as a form of self-expression 
-              and mindful creativity.
+              I'm a fashion curator sharing my passion for timeless style, sustainable design, and the stories behind
+              what we wear. From building capsule wardrobes to discovering emerging designers, this is where we
+              celebrate fashion as a form of self-expression and mindful creativity.
             </p>
-            
+
             {/* Newsletter CTA */}
             <form className="flex flex-col sm:flex-row gap-3 max-w-md mx-auto">
               <input
@@ -39,9 +37,7 @@ const Index = () => {
                 required
                 className="flex-1 px-5 py-3 border-2 border-foreground/20 rounded-full focus:ring-2 focus:ring-secondary focus:border-secondary bg-white transition-all font-serif"
               />
-              <Button variant="primary">
-                SUBSCRIBE
-              </Button>
+              <Button variant="primary">SUBSCRIBE</Button>
             </form>
           </div>
         </section>

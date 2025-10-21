@@ -23,12 +23,12 @@ const Index = () => {
         <section className="px-5 md:px-[90px] pt-12 md:pt-20 pb-8 md:pb-12">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="heading-lg mb-6 font-sans">
-              WELCOME TO PERSPECTIVE: WHERE THOUGHTFUL LIVING MEETS CREATIVE EXPLORATION
+              WHERE STYLE MEETS SUBSTANCE: EXPLORING FASHION AS AN ART FORM
             </h1>
             <p className="text-lg md:text-xl leading-relaxed text-foreground/80 max-w-3xl mx-auto mb-8 font-serif">
-              I'm sharing my journey through wellness, travel, minimalist living, and creative pursuits. 
-              This is a space for slow mornings, sustainable choices, and finding beauty in simplicity. 
-              Join me as we explore what it means to live intentionally.
+              I'm a fashion curator sharing my passion for timeless style, sustainable design, and the stories behind what we wear. 
+              From building capsule wardrobes to discovering emerging designers, this is where we celebrate fashion as a form of self-expression 
+              and mindful creativity.
             </p>
             
             {/* Newsletter CTA */}

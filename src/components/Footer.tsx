@@ -22,7 +22,7 @@ const Footer = () => {
           {/* Logo Section */}
           <div className="md:col-span-1">
             <div className="font-serif text-3xl md:text-4xl font-bold italic">
-              Perspective
+              Vesper
             </div>
           </div>
 
@@ -67,7 +67,7 @@ const Footer = () => {
         {/* Copyright */}
         <div className="mt-12 pt-6 border-t border-foreground/20">
           <p className="text-sm text-center md:text-left">
-            © 2025 Perspective Blog. All rights reserved.
+            © 2025 Vesper. All rights reserved.
           </p>
         </div>
       </div>

@@ -17,146 +17,146 @@ export interface Article {
 export const articles: Article[] = [
   {
     id: "1",
-    title: "FINDING BALANCE: HOW TO CREATE A SUSTAINABLE SELF-CARE ROUTINE",
-    excerpt: "Develop a personalized self-care practice that fits your lifestyle with these simple strategies for physical, mental, and emotional wellbeing.",
+    title: "THE ART OF THE CAPSULE WARDROBE: BUILDING A TIMELESS COLLECTION",
+    excerpt: "Discover how to curate a versatile wardrobe with fewer pieces that work seamlessly together, creating endless styling possibilities while embracing sustainable fashion.",
     date: "March 19, 2025",
-    image: "https://images.unsplash.com/photo-1506126613408-eca07ce68773?w=800&h=800&fit=crop",
-    slug: "finding-balance-sustainable-self-care",
+    image: "https://images.unsplash.com/photo-1490481651871-ab68de25d43d?w=800&h=800&fit=crop",
+    slug: "capsule-wardrobe-timeless-collection",
     colorClass: "bg-vibrant-purple",
     author: {
-      name: "Emma Thompson",
+      name: "Sofia Laurent",
       avatar: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&h=100&fit=crop"
     },
     readTime: "5 min",
     content: `
-      <p>In our fast-paced world, self-care has become more important than ever. But creating a sustainable routine that actually works for your unique lifestyle can feel overwhelming.</p>
+      <p>The capsule wardrobe concept has revolutionized how we approach getting dressed. It's not about restriction—it's about intentional curation and discovering your authentic style.</p>
       
-      <h2>UNDERSTANDING SELF-CARE</h2>
-      <p>Self-care isn't selfish—it's essential. It's about taking intentional actions to care for your physical, mental, and emotional health.</p>
+      <h2>UNDERSTANDING THE FOUNDATION</h2>
+      <p>A capsule wardrobe typically consists of 30-40 versatile pieces that can be mixed and matched to create multiple outfits. The key is selecting items that reflect your lifestyle and personal aesthetic.</p>
       
-      <h2>BUILDING YOUR ROUTINE</h2>
-      <p>Start small. Choose one or two practices that resonate with you and build from there. Whether it's morning meditation, evening journaling, or weekly nature walks, consistency matters more than perfection.</p>
+      <h2>STARTING WITH ESSENTIALS</h2>
+      <p>Begin with classic pieces: a well-fitted blazer, quality denim, crisp white shirts, and neutral basics. These foundational items form the backbone of your wardrobe and never go out of style.</p>
       
-      <h2>PHYSICAL WELLNESS</h2>
-      <p>Prioritize movement that brings you joy. This might be yoga, dancing, hiking, or simply walking around your neighborhood. The key is finding activities you genuinely enjoy.</p>
+      <h2>COLOR HARMONY</h2>
+      <p>Choose a cohesive color palette that complements your skin tone and personal style. Neutrals like black, white, navy, and beige provide versatility, while one or two accent colors add personality.</p>
       
-      <h2>MENTAL CLARITY</h2>
-      <p>Create space for mental rest. This could include meditation, deep breathing exercises, or simply taking breaks throughout your day to check in with yourself.</p>
+      <h2>QUALITY OVER QUANTITY</h2>
+      <p>Invest in well-made pieces that will last. Look for quality fabrics, proper construction, and timeless silhouettes. A higher price point per item often means better longevity and less overall spending.</p>
       
-      <h2>EMOTIONAL BALANCE</h2>
-      <p>Honor your emotions. Journaling, therapy, or talking with trusted friends can help you process feelings and maintain emotional wellbeing.</p>
+      <h2>SEASONAL TRANSITIONS</h2>
+      <p>Rotate pieces seasonally while maintaining your core wardrobe. Layering pieces like cardigans and lightweight jackets allow your capsule to work year-round.</p>
       
-      <p>Remember, self-care looks different for everyone. The most important thing is to create a routine that feels authentic and sustainable for you.</p>
+      <p>Building a capsule wardrobe is a journey of self-discovery. It teaches you what you truly love to wear and helps eliminate decision fatigue while promoting more sustainable fashion choices.</p>
     `
   },
   {
     id: "2",
-    title: "THE ART OF SLOW TRAVEL: EMBRACING LOCAL EXPERIENCES",
-    excerpt: "Discover the benefits of unhurried exploration and how to create meaningful connections during your travels.",
+    title: "SUSTAINABLE FASHION: THE NEW LUXURY STANDARD",
+    excerpt: "Explore how conscious design is reshaping the fashion industry, from innovative materials to transparent production practices.",
     date: "March 15, 2025",
-    image: "https://images.unsplash.com/photo-1488646953014-85cb44e25828?w=800&h=800&fit=crop",
-    slug: "art-of-slow-travel",
+    image: "https://images.unsplash.com/photo-1523381210434-271e8be1f52b?w=800&h=800&fit=crop",
+    slug: "sustainable-fashion-new-luxury",
     colorClass: "bg-vibrant-yellow",
     author: {
-      name: "Marcus Chen",
+      name: "Alessandro Verde",
       avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop"
     },
     readTime: "7 min"
   },
   {
     id: "3",
-    title: "MINIMALIST LIVING: CREATING SPACE FOR WHAT MATTERS MOST",
-    excerpt: "Simplify your environment and mindset with practical approaches to minimalism that focus on value over quantity.",
+    title: "VINTAGE TREASURES: A GUIDE TO THRIFTING DESIGNER PIECES",
+    excerpt: "Learn the art of vintage shopping and how to spot authentic designer gems while building a unique, sustainable wardrobe.",
     date: "March 10, 2025",
-    image: "https://images.unsplash.com/photo-1484101403633-562f891dc89a?w=800&h=800&fit=crop",
-    slug: "minimalist-living-space",
+    image: "https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=800&h=800&fit=crop",
+    slug: "vintage-thrifting-designer-guide",
     colorClass: "bg-vibrant-mint",
     author: {
-      name: "Sarah Mitchell",
+      name: "Isabella Monroe",
       avatar: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&h=100&fit=crop"
     },
     readTime: "6 min"
   },
   {
     id: "4",
-    title: "SEASONAL SKINCARE: ADAPTING YOUR ROUTINE FOR SPRING",
-    excerpt: "Refresh your skincare as the weather changes with gentle products and techniques that help your skin transition smoothly.",
+    title: "COLOR THEORY IN FASHION: MASTERING YOUR PERSONAL PALETTE",
+    excerpt: "Unlock the power of color to enhance your natural features and create stunning, cohesive outfits that express your unique style.",
     date: "February 28, 2025",
-    image: "https://images.unsplash.com/photo-1556228578-0d85b1a4d571?w=800&h=800&fit=crop",
-    slug: "seasonal-skincare-spring",
+    image: "https://images.unsplash.com/photo-1525562723836-dca67a71d5f1?w=800&h=800&fit=crop",
+    slug: "color-theory-fashion-palette",
     colorClass: "bg-vibrant-coral",
     author: {
-      name: "Emma Thompson",
+      name: "Sofia Laurent",
       avatar: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&h=100&fit=crop"
     },
     readTime: "5 min"
   },
   {
     id: "5",
-    title: "MINDFUL MORNINGS: RITUALS THAT SET THE TONE",
-    excerpt: "Transform your mornings with intentional practices that create calm, clarity, and energy for the day ahead.",
+    title: "THE TAILORING REVIVAL: WHY CUSTOM FIT MATTERS",
+    excerpt: "Discover how proper tailoring transforms off-the-rack pieces into perfectly fitted garments that elevate your entire wardrobe.",
     date: "February 20, 2025",
-    image: "https://images.unsplash.com/photo-1470770841072-f978cf4d019e?w=800&h=800&fit=crop",
-    slug: "mindful-morning-rituals",
+    image: "https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=800&h=800&fit=crop",
+    slug: "tailoring-custom-fit-guide",
     colorClass: "bg-vibrant-blue",
     author: {
-      name: "Marcus Chen",
+      name: "Alessandro Verde",
       avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop"
     },
     readTime: "4 min"
   },
   {
     id: "6",
-    title: "CREATIVE SPACES: DESIGNING YOUR INSPIRATION CORNER",
-    excerpt: "Learn how to curate a personal space that sparks creativity and supports your artistic practice.",
+    title: "ACCESSORY ALCHEMY: ELEVATING BASICS WITH STATEMENT PIECES",
+    excerpt: "Master the art of accessorizing to transform simple outfits into memorable looks with jewelry, bags, and scarves.",
     date: "February 15, 2025",
-    image: "https://images.unsplash.com/photo-1524758631624-e2822e304c36?w=800&h=800&fit=crop",
-    slug: "creative-spaces-inspiration",
+    image: "https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?w=800&h=800&fit=crop",
+    slug: "accessory-statement-pieces-guide",
     colorClass: "bg-vibrant-magenta",
     author: {
-      name: "Sarah Mitchell",
+      name: "Isabella Monroe",
       avatar: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&h=100&fit=crop"
     },
     readTime: "6 min"
   },
   {
     id: "7",
-    title: "PLANT-BASED EATING: A BEGINNER'S GUIDE",
-    excerpt: "Explore the world of plant-based nutrition with practical tips for incorporating more plants into your diet.",
+    title: "FABRIC FUNDAMENTALS: UNDERSTANDING TEXTILE QUALITY",
+    excerpt: "Learn to identify premium fabrics and understand how material choice impacts garment longevity, comfort, and style.",
     date: "February 10, 2025",
-    image: "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=800&h=800&fit=crop",
-    slug: "plant-based-eating-guide",
+    image: "https://images.unsplash.com/photo-1558769132-cb1aea1847c8?w=800&h=800&fit=crop",
+    slug: "fabric-textile-quality-guide",
     colorClass: "bg-vibrant-orange",
     author: {
-      name: "Emma Thompson",
+      name: "Sofia Laurent",
       avatar: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&h=100&fit=crop"
     },
     readTime: "8 min"
   },
   {
     id: "8",
-    title: "DIGITAL DETOX: RECLAIMING YOUR TIME",
-    excerpt: "Discover strategies for reducing screen time and creating healthier boundaries with technology.",
+    title: "EMERGING DESIGNERS: DISCOVERING TOMORROW'S FASHION ICONS",
+    excerpt: "Spotlight on innovative new designers who are redefining fashion with fresh perspectives and boundary-pushing creativity.",
     date: "February 5, 2025",
-    image: "https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?w=800&h=800&fit=crop",
-    slug: "digital-detox-reclaiming-time",
+    image: "https://images.unsplash.com/photo-1558769132-92e717d613cd?w=800&h=800&fit=crop",
+    slug: "emerging-designers-fashion-spotlight",
     colorClass: "bg-vibrant-lavender",
     author: {
-      name: "Marcus Chen",
+      name: "Alessandro Verde",
       avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop"
     },
     readTime: "5 min"
   },
   {
     id: "9",
-    title: "SUSTAINABLE FASHION: BUILDING A CONSCIOUS WARDROBE",
-    excerpt: "Make thoughtful fashion choices that reflect your values while creating a versatile, timeless wardrobe.",
+    title: "THE POWER OF MONOCHROME: STYLING IN A SINGLE COLOR",
+    excerpt: "Master the sophisticated art of head-to-toe monochromatic dressing for effortlessly chic and elongating looks.",
     date: "January 28, 2025",
-    image: "https://images.unsplash.com/photo-1490481651871-ab68de25d43d?w=800&h=800&fit=crop",
-    slug: "sustainable-fashion-conscious-wardrobe",
+    image: "https://images.unsplash.com/photo-1483985988355-763728e1935b?w=800&h=800&fit=crop",
+    slug: "monochrome-styling-single-color",
     colorClass: "bg-vibrant-yellow",
     author: {
-      name: "Sarah Mitchell",
+      name: "Isabella Monroe",
       avatar: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&h=100&fit=crop"
     },
     readTime: "7 min"

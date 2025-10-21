@@ -55,9 +55,9 @@ const Newsletter = ({ variant = "colorful" }: NewsletterProps) => {
   return (
     <section className="bg-accent-pink py-16 md:py-20">
       <div className="px-5 md:px-[90px] max-w-2xl mx-auto text-center">
-        <h2 className="heading-md mb-4 font-sans">STAY INSPIRED.</h2>
+        <h2 className="heading-md mb-4 font-sans">STAY STYLED.</h2>
         <p className="text-lg md:text-xl mb-8 font-serif leading-relaxed">
-          Subscribe to receive our latest articles and insights directly in your inbox.
+          Get the latest in fashion inspiration, styling tips, and designer spotlights delivered to your inbox.
         </p>
         <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row gap-3 max-w-md mx-auto">
           <input

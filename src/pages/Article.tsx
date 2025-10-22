@@ -18,7 +18,7 @@ const Article = () => {
         <main className="px-5 md:px-[90px] py-20 text-center">
           <h1 className="heading-lg mb-6 font-sans">ARTICLE NOT FOUND</h1>
           <Link to="/">
-            <Button variant="outline" showArrow={false}>
+            <Button variant="transparent" showArrow={false}>
               Return to Homepage
             </Button>
           </Link>
@@ -41,7 +41,7 @@ const Article = () => {
         {/* Back Button */}
         <div className="px-5 md:px-[90px] pt-8">
           <Link to="/">
-            <Button variant="secondary" showArrow={false}>
+            <Button variant="transparent" showArrow={false}>
               ← BACK TO ARTICLES
             </Button>
           </Link>

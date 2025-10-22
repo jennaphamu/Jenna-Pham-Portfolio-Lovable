@@ -56,7 +56,7 @@ const Footer = () => {
               <h3 className="heading-sm font-sans">
                 Subscribe to the Newsletter
               </h3>
-              <button className="border-2 border-foreground text-foreground bg-transparent rounded-full px-6 md:px-8 py-2 md:py-2.5 uppercase font-bold hover:bg-foreground hover:text-accent-red transition-all duration-200 inline-flex items-center gap-2 font-sans">
+              <button className="btn-transparent hover:text-accent-red font-sans">
                 SIGN UP
                 <ArrowRight className="w-4 h-4" />
               </button>

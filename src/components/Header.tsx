@@ -17,7 +17,7 @@ const Header = () => {
             <button className="nav-text text-secondary hover:underline">
               SIGN IN
             </button>
-            <Button variant="small" showArrow={false}>
+            <Button variant="filled" showArrow={false} className="text-xs py-2 px-5">
               SUBSCRIBE
             </Button>
           </div>

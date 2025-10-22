@@ -37,7 +37,7 @@ const Index = () => {
                 required
                 className="flex-1 px-5 py-3 border-2 border-foreground/20 rounded-full focus:ring-2 focus:ring-secondary focus:border-secondary bg-white transition-all font-serif"
               />
-              <Button variant="primary">SUBSCRIBE</Button>
+              <Button variant="filled">SUBSCRIBE</Button>
             </form>
           </div>
         </section>
@@ -57,7 +57,7 @@ const Index = () => {
         {/* Load More */}
         {visibleArticles < articles.length && (
           <div className="text-center py-12">
-            <Button onClick={loadMore} variant="secondary">
+            <Button onClick={loadMore} variant="transparent">
               LOAD MORE
             </Button>
           </div>

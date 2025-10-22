@@ -42,7 +42,7 @@ const Newsletter = ({ variant = "colorful" }: NewsletterProps) => {
             <button
               type="submit"
               disabled={isSubmitting}
-              className="border-2 border-white text-white bg-transparent rounded-full px-6 md:px-8 py-2 md:py-2.5 uppercase font-bold hover:bg-white hover:text-black transition-all duration-200 inline-flex items-center gap-2 disabled:opacity-50 font-sans"
+              className="btn-transparent border-white text-white hover:bg-white hover:text-black disabled:opacity-50 font-sans"
             >
               {isSubmitting ? "SIGNING UP..." : "SIGN UP"}
             </button>
@@ -72,7 +72,7 @@ const Newsletter = ({ variant = "colorful" }: NewsletterProps) => {
           <button
             type="submit"
             disabled={isSubmitting}
-            className="btn-primary justify-center disabled:opacity-50"
+            className="btn-filled justify-center disabled:opacity-50"
           >
             {isSubmitting ? "SUBSCRIBING..." : "SUBSCRIBE"}
             {!isSubmitting && <ArrowRight className="w-4 h-4" />}

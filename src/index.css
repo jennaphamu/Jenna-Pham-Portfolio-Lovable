@@ -93,8 +93,8 @@
 }
 
 @layer components {
-  /* Button Styles */
-  .btn-primary {
+  /* Button Styles - Two Variants Only */
+  .btn-filled {
     @apply bg-[hsl(var(--primary))] hover:bg-[hsl(var(--primary-hover))] 
            border-2 border-foreground text-foreground uppercase font-bold 
            py-3 px-7 rounded-full inline-flex items-center gap-2 
@@ -102,19 +102,11 @@
     transition-timing-function: cubic-bezier(0.34, 1, 0.64, 1);
   }
   
-  .btn-secondary {
-    @apply border-2 border-[hsl(var(--secondary))] text-[hsl(var(--secondary))] 
-           hover:bg-[hsl(var(--secondary))] hover:text-white 
-           uppercase font-semibold py-3 px-7 rounded-full 
-           inline-flex items-center gap-2 transition-all duration-200;
-  }
-  
-  .btn-small {
-    @apply bg-[hsl(var(--primary))] hover:bg-[hsl(var(--primary-hover))] 
+  .btn-transparent {
+    @apply bg-transparent hover:bg-foreground hover:text-background
            border-2 border-foreground text-foreground uppercase font-bold 
-           text-xs py-2 px-5 rounded-full inline-flex items-center gap-1.5 
+           py-3 px-7 rounded-full inline-flex items-center gap-2 
            transition-all duration-200;
-    transition-timing-function: cubic-bezier(0.34, 1, 0.64, 1);
   }
   
   /* Card Hover Effect */

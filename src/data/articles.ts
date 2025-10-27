@@ -17,11 +17,11 @@ export interface Article {
 export const articles: Article[] = [
   {
     id: "1",
-    title: "THE ART OF THE CAPSULE WARDROBE: BUILDING A TIMELESS COLLECTION",
+    title: "BUILDING A CAPSULE WARDROBE",
     excerpt: "Discover how to curate a versatile wardrobe with fewer pieces that work seamlessly together, creating endless styling possibilities while embracing sustainable fashion.",
     date: "March 19, 2025",
     image: "https://images.unsplash.com/photo-1490481651871-ab68de25d43d?w=800&h=800&fit=crop",
-    slug: "capsule-wardrobe-timeless-collection",
+    slug: "building-capsule-wardrobe",
     colorClass: "bg-vibrant-purple",
     author: {
       name: "Sofia Laurent",
@@ -51,11 +51,11 @@ export const articles: Article[] = [
   },
   {
     id: "2",
-    title: "SUSTAINABLE FASHION: THE NEW LUXURY STANDARD",
+    title: "SUSTAINABLE FASHION LUXURY",
     excerpt: "Explore how conscious design is reshaping the fashion industry, from innovative materials to transparent production practices.",
     date: "March 15, 2025",
     image: "https://images.unsplash.com/photo-1523381210434-271e8be1f52b?w=800&h=800&fit=crop",
-    slug: "sustainable-fashion-new-luxury",
+    slug: "sustainable-fashion-luxury",
     colorClass: "bg-vibrant-yellow",
     author: {
       name: "Alessandro Verde",
@@ -65,11 +65,11 @@ export const articles: Article[] = [
   },
   {
     id: "3",
-    title: "VINTAGE TREASURES: A GUIDE TO THRIFTING DESIGNER PIECES",
+    title: "THRIFTING DESIGNER PIECES",
     excerpt: "Learn the art of vintage shopping and how to spot authentic designer gems while building a unique, sustainable wardrobe.",
     date: "March 10, 2025",
     image: "https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=800&h=800&fit=crop",
-    slug: "vintage-thrifting-designer-guide",
+    slug: "thrifting-designer-pieces",
     colorClass: "bg-vibrant-mint",
     author: {
       name: "Isabella Monroe",
@@ -79,11 +79,11 @@ export const articles: Article[] = [
   },
   {
     id: "4",
-    title: "COLOR THEORY IN FASHION: MASTERING YOUR PERSONAL PALETTE",
+    title: "MASTERING YOUR COLOR PALETTE",
     excerpt: "Unlock the power of color to enhance your natural features and create stunning, cohesive outfits that express your unique style.",
     date: "February 28, 2025",
     image: "https://images.unsplash.com/photo-1525562723836-dca67a71d5f1?w=800&h=800&fit=crop",
-    slug: "color-theory-fashion-palette",
+    slug: "color-palette-fashion",
     colorClass: "bg-vibrant-coral",
     author: {
       name: "Sofia Laurent",
@@ -93,11 +93,11 @@ export const articles: Article[] = [
   },
   {
     id: "5",
-    title: "THE TAILORING REVIVAL: WHY CUSTOM FIT MATTERS",
+    title: "WHY CUSTOM FIT MATTERS",
     excerpt: "Discover how proper tailoring transforms off-the-rack pieces into perfectly fitted garments that elevate your entire wardrobe.",
     date: "February 20, 2025",
     image: "https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=800&h=800&fit=crop",
-    slug: "tailoring-custom-fit-guide",
+    slug: "custom-fit-tailoring",
     colorClass: "bg-vibrant-blue",
     author: {
       name: "Alessandro Verde",
@@ -107,11 +107,11 @@ export const articles: Article[] = [
   },
   {
     id: "6",
-    title: "ACCESSORY ALCHEMY: ELEVATING BASICS WITH STATEMENT PIECES",
+    title: "STATEMENT PIECES STYLING",
     excerpt: "Master the art of accessorizing to transform simple outfits into memorable looks with jewelry, bags, and scarves.",
     date: "February 15, 2025",
     image: "https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?w=800&h=800&fit=crop",
-    slug: "accessory-statement-pieces-guide",
+    slug: "statement-pieces-styling",
     colorClass: "bg-vibrant-magenta",
     author: {
       name: "Isabella Monroe",
@@ -121,11 +121,11 @@ export const articles: Article[] = [
   },
   {
     id: "7",
-    title: "FABRIC FUNDAMENTALS: UNDERSTANDING TEXTILE QUALITY",
+    title: "UNDERSTANDING TEXTILE QUALITY",
     excerpt: "Learn to identify premium fabrics and understand how material choice impacts garment longevity, comfort, and style.",
     date: "February 10, 2025",
     image: "https://images.unsplash.com/photo-1558769132-cb1aea1847c8?w=800&h=800&fit=crop",
-    slug: "fabric-textile-quality-guide",
+    slug: "textile-quality-guide",
     colorClass: "bg-vibrant-orange",
     author: {
       name: "Sofia Laurent",
@@ -135,11 +135,11 @@ export const articles: Article[] = [
   },
   {
     id: "8",
-    title: "EMERGING DESIGNERS: DISCOVERING TOMORROW'S FASHION ICONS",
+    title: "EMERGING FASHION DESIGNERS",
     excerpt: "Spotlight on innovative new designers who are redefining fashion with fresh perspectives and boundary-pushing creativity.",
     date: "February 5, 2025",
     image: "https://images.unsplash.com/photo-1558769132-92e717d613cd?w=800&h=800&fit=crop",
-    slug: "emerging-designers-fashion-spotlight",
+    slug: "emerging-fashion-designers",
     colorClass: "bg-vibrant-lavender",
     author: {
       name: "Alessandro Verde",
@@ -149,11 +149,11 @@ export const articles: Article[] = [
   },
   {
     id: "9",
-    title: "THE POWER OF MONOCHROME: STYLING IN A SINGLE COLOR",
+    title: "MONOCHROME STYLING GUIDE",
     excerpt: "Master the sophisticated art of head-to-toe monochromatic dressing for effortlessly chic and elongating looks.",
     date: "January 28, 2025",
     image: "https://images.unsplash.com/photo-1483985988355-763728e1935b?w=800&h=800&fit=crop",
-    slug: "monochrome-styling-single-color",
+    slug: "monochrome-styling-guide",
     colorClass: "bg-vibrant-yellow",
     author: {
       name: "Isabella Monroe",

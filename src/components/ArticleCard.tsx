@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
-import { ArrowRight } from "lucide-react";
 import { cn } from "@/lib/utils";
+import Button from "./Button";
 
 interface ArticleCardProps {
   title: string;
@@ -11,17 +11,38 @@ interface ArticleCardProps {
   colorClass?: string;
 }
 
-const ArticleCard = ({ title, excerpt, date, image, slug, colorClass = "bg-vibrant-purple" }: ArticleCardProps) => {
+const ArticleCard = ({
+  title,
+  excerpt,
+  date,
+  image,
+  slug,
+  colorClass = "bg-vibrant-purple",
+}: ArticleCardProps) => {
   return (
     <Link to={`/article/${slug}`} className="block">
-      <article className={cn("card-hover rounded-3xl overflow-hidden flex flex-col h-full", colorClass)}>
+      <article
+        className={cn(
+          "card-hover rounded-3xl overflow-hidden flex flex-col h-full",
+          colorClass
+        )}
+      >
         {/* Image */}
         <div className="aspect-square overflow-hidden p-4 md:p-5">
-          <img
-            src={image}
-            alt={title}
-            className="w-full h-full object-cover transition-transform duration-500 rounded-2xl"
-          />
+          <div className="relative w-full h-full rounded-2xl overflow-hidden">
+            <img
+              src={image}
+              alt={title}
+              className="w-full h-full object-cover transition-transform duration-500 grayscale"
+            />
+            <div
+              className={cn(
+                "absolute inset-0 mix-blend-multiply opacity-60",
+                colorClass
+              )}
+              aria-hidden="true"
+            />
+          </div>
         </div>
 
         {/* Content */}
@@ -29,16 +50,15 @@ const ArticleCard = ({ title, excerpt, date, image, slug, colorClass = "bg-vibra
           <time className="text-sm font-medium text-foreground/70 mb-3 block font-sans">
             {date}
           </time>
-          <h2 className="heading-md leading-tight mb-3 font-sans">
+          <h2 className="text-5xl md:text-6xl leading-[0.8] mb-3 font-sans font-extrabold tracking-tighter">
             {title}
           </h2>
           <p className="text-sm md:text-base leading-relaxed text-foreground/80 mb-4 flex-1 line-clamp-3 font-serif">
             {excerpt}
           </p>
-          <button className="bg-primary hover:bg-primary-hover border-2 border-foreground text-foreground uppercase font-bold text-xs py-2 px-5 rounded-full inline-flex items-center gap-1.5 transition-all duration-200 self-start font-sans">
+          <Button variant="filled" className="text-xs py-2 px-5 self-start">
             READ MORE
-            <ArrowRight className="w-3 h-3" />
-          </button>
+          </Button>
         </div>
       </article>
     </Link>

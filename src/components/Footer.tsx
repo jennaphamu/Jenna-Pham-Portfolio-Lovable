@@ -1,34 +1,28 @@
-import { ArrowRight } from "lucide-react";
+import NewsletterForm from "./NewsletterForm";
 
 const Footer = () => {
-  const helpLinks = [
-    { label: "FAQ", href: "#faq" },
-    { label: "Privacy Policy", href: "#privacy" },
-    { label: "Terms of Service", href: "#terms" },
-    { label: "Contact Us", href: "#contact" },
-  ];
+  const helpLinks = [{ label: "CONTACT", href: "mailto:hello@vesper.com" }];
 
   const socialLinks = [
-    { label: "Instagram", href: "#instagram" },
-    { label: "Twitter", href: "#twitter" },
-    { label: "Pinterest", href: "#pinterest" },
-    { label: "YouTube", href: "#youtube" },
+    { label: "INSTAGRAM", href: "https://instagram.com" },
+    { label: "TWITTER", href: "https://twitter.com" },
+    { label: "PINTEREST", href: "https://pinterest.com" },
   ];
 
   return (
     <footer className="bg-accent-red text-foreground">
-      <div className="px-5 md:px-[90px] py-12 md:py-16">
+      <div className="px-5 md:px-20 py-12 md:py-16">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 md:gap-x-12 lg:gap-x-16 items-start">
           {/* Logo Section */}
           <div className="md:col-span-1">
             <div className="font-serif text-3xl md:text-4xl font-bold italic">
-              Vesper
+              VESPER
             </div>
           </div>
 
-          {/* Help & Support */}
+          {/* Connect */}
           <div className="md:col-span-1">
-            <h3 className="footer-header">HELP & SUPPORT</h3>
+            <h3 className="footer-header">CONNECT</h3>
             <nav className="flex flex-col gap-2">
               {helpLinks.map((link) => (
                 <a key={link.label} href={link.href} className="footer-link">
@@ -40,10 +34,16 @@ const Footer = () => {
 
           {/* Social */}
           <div className="md:col-span-1">
-            <h3 className="footer-header">SOCIAL</h3>
+            <h3 className="footer-header">FOLLOW</h3>
             <nav className="flex flex-col gap-2">
               {socialLinks.map((link) => (
-                <a key={link.label} href={link.href} className="footer-link">
+                <a
+                  key={link.label}
+                  href={link.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="footer-link"
+                >
                   {link.label}
                 </a>
               ))}
@@ -51,23 +51,15 @@ const Footer = () => {
           </div>
 
           {/* Newsletter */}
-          <div className="md:col-span-1">
-            <div className="space-y-4">
-              <h3 className="heading-sm font-sans">
-                Subscribe to the Newsletter
-              </h3>
-              <button className="btn-transparent hover:text-accent-red font-sans">
-                SIGN UP
-                <ArrowRight className="w-4 h-4" />
-              </button>
-            </div>
+          <div id="newsletter" className="md:col-span-1">
+            <NewsletterForm inputClassName="min-w-72" />
           </div>
         </div>
 
         {/* Copyright */}
         <div className="mt-12 pt-6 border-t border-foreground/20">
-          <p className="text-sm text-center md:text-left">
-            © 2025 Vesper. All rights reserved.
+          <p className="text-sm text-center md:text-left uppercase">
+            © 2025 VESPER. ALL RIGHTS RESERVED.
           </p>
         </div>
       </div>

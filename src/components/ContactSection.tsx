@@ -18,7 +18,7 @@ const ContactSection = () => {
   };
 
   const inputStyles =
-    "w-full bg-transparent border-0 border-b border-primary/20 text-foreground placeholder:text-foreground/25 text-sm focus:outline-none focus:border-primary/50 pb-3 pt-1 transition-colors duration-300";
+    "w-full bg-transparent border-0 border-b border-primary/15 text-foreground placeholder:text-foreground/20 text-sm focus:outline-none focus:border-primary/40 pb-3 pt-1 transition-colors duration-300";
 
   return (
     <section id="contact" className="px-6 md:px-12 lg:px-20 py-20 md:py-32">
@@ -31,10 +31,10 @@ const ContactSection = () => {
           className="mb-12"
         >
           <p className="section-header">reach out</p>
-          <h2 className="text-4xl md:text-5xl font-display font-light tracking-tight mb-6">
+          <h2 className="text-4xl md:text-5xl font-display font-light tracking-tight mb-6 text-foreground/90">
             Let's grow something
           </h2>
-          <p className="text-base md:text-lg text-foreground/50 leading-relaxed max-w-lg mx-auto font-display italic">
+          <p className="text-base md:text-lg text-foreground/40 leading-relaxed max-w-lg mx-auto font-display italic">
             Have a project in mind? Let's plant the seed together.
           </p>
         </motion.div>
@@ -77,7 +77,7 @@ const ContactSection = () => {
             <button
               type="submit"
               disabled={isSubmitting}
-              className="text-sm border border-primary/30 rounded-full px-7 py-3 hover:bg-primary hover:text-primary-foreground transition-all duration-500 disabled:opacity-50 inline-flex items-center gap-2"
+              className="text-sm border border-primary/25 text-primary/80 rounded-full px-7 py-3 hover:bg-primary hover:text-primary-foreground transition-all duration-500 disabled:opacity-50 inline-flex items-center gap-2"
             >
               {isSubmitting ? "sending..." : "send message"}
               {!isSubmitting && <ArrowUpRight className="w-3.5 h-3.5" />}
@@ -90,7 +90,7 @@ const ContactSection = () => {
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
           transition={{ duration: 0.5, delay: 0.3 }}
-          className="mt-12 text-sm text-foreground/30"
+          className="mt-12 text-sm text-foreground/25"
         >
           <a href="mailto:hello@example.com" className="link-arrow inline-flex items-center gap-1">
             hello@example.com

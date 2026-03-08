@@ -14,12 +14,12 @@ const ProjectsSection = () => {
           className="text-center mb-20"
         >
           <p className="section-header">selected</p>
-          <h2 className="text-4xl md:text-5xl font-display font-light tracking-tight">
+          <h2 className="text-4xl md:text-5xl font-display font-light tracking-tight text-foreground/90">
             Work
           </h2>
         </motion.div>
 
-        <div className="space-y-10">
+        <div className="space-y-12">
           {projects.map((project, i) => (
             <motion.a
               key={project.id}
@@ -32,22 +32,22 @@ const ProjectsSection = () => {
               transition={{ duration: 0.8, delay: i * 0.08, ease: [0.25, 0.4, 0.25, 1] as const }}
               className="project-card card-hover group block"
             >
-              <div className={`${project.colorClass} aspect-[16/8] md:aspect-[16/7] overflow-hidden`}>
+              <div className="bg-card aspect-[16/8] md:aspect-[16/7] overflow-hidden rounded-t-2xl">
                 <img
                   src={project.image}
                   alt={project.title}
-                  className="w-full h-full object-cover transition-transform duration-[800ms] group-hover:scale-[1.04]"
+                  className="w-full h-full object-cover transition-transform duration-[800ms] group-hover:scale-[1.04] opacity-70 group-hover:opacity-90"
                   loading="lazy"
                 />
               </div>
-              <div className="p-6 md:p-8 bg-card">
+              <div className="p-6 md:p-8 bg-card border border-border/50 border-t-0 rounded-b-2xl">
                 <div className="flex items-start justify-between gap-4 mb-2">
-                  <h3 className="font-display text-xl md:text-2xl tracking-tight font-medium">
+                  <h3 className="font-display text-xl md:text-2xl tracking-tight font-medium text-foreground/90">
                     {project.title}
                   </h3>
-                  <ArrowUpRight className="w-5 h-5 shrink-0 text-foreground/20 group-hover:text-primary transition-colors duration-300 mt-1" />
+                  <ArrowUpRight className="w-5 h-5 shrink-0 text-primary/30 group-hover:text-primary transition-colors duration-300 mt-1" />
                 </div>
-                <p className="text-sm md:text-base text-foreground/50 leading-relaxed max-w-2xl">
+                <p className="text-sm md:text-base text-foreground/40 leading-relaxed max-w-2xl">
                   {project.description}
                 </p>
               </div>

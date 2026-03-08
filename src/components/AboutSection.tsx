@@ -20,13 +20,12 @@ const AboutSection = () => {
           transition={{ duration: 0.6 }}
           className="mb-20"
         >
-          <p className="section-header">the gardener</p>
-          <h2 className="text-4xl md:text-5xl font-display font-light tracking-tight">
+          <p className="section-header">the cultivator</p>
+          <h2 className="text-4xl md:text-5xl font-display font-light tracking-tight text-foreground/90">
             About
           </h2>
         </motion.div>
 
-        {/* Stem line decorative element */}
         <div className="stem-line h-16 mb-12" />
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 text-left mb-20">
@@ -57,7 +56,7 @@ const AboutSection = () => {
                 <span className="font-mono text-sm text-primary/40 shrink-0 pt-0.5">
                   0{i + 1}
                 </span>
-                <p className="text-base leading-relaxed text-foreground/60">
+                <p className="text-base leading-relaxed text-foreground/50">
                   {text}
                 </p>
               </motion.div>
@@ -97,7 +96,7 @@ const AboutSection = () => {
                 <span className="font-mono text-sm text-primary/40 shrink-0 pt-0.5">
                   0{i + 1}
                 </span>
-                <p className="text-base leading-relaxed text-foreground/60">
+                <p className="text-base leading-relaxed text-foreground/50">
                   {text}
                 </p>
               </motion.div>

@@ -11,20 +11,20 @@ const Header = () => {
     >
       <div className="px-6 md:px-12 lg:px-20 py-5">
         <div className="flex items-center justify-between max-w-7xl mx-auto">
-          <Link to="/" className="text-lg tracking-tight text-white/80 hover:text-white transition-colors font-display italic">
+          <Link to="/" className="text-lg tracking-tight text-foreground/70 hover:text-primary transition-colors font-display italic">
             Jenna
           </Link>
 
           <nav className="flex items-center gap-6 md:gap-8">
-            <a href="#work" className="text-sm text-white/50 hover:text-white/90 transition-colors duration-300">
+            <a href="#work" className="text-sm text-foreground/40 hover:text-primary/80 transition-colors duration-300">
               work
             </a>
-            <a href="#about" className="text-sm text-white/50 hover:text-white/90 transition-colors duration-300">
+            <a href="#about" className="text-sm text-foreground/40 hover:text-primary/80 transition-colors duration-300">
               about
             </a>
             <a
               href="#contact"
-              className="text-sm text-white/70 border border-white/15 rounded-full px-4 py-1.5 hover:bg-white/5 hover:border-white/30 transition-all duration-300"
+              className="text-sm text-primary/70 border border-primary/20 rounded-full px-4 py-1.5 hover:bg-primary/5 hover:border-primary/40 transition-all duration-300"
             >
               contact
             </a>

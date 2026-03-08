@@ -6,122 +6,127 @@
 
 @layer base {
   :root {
-    --background: 90 12% 95%;
-    --foreground: 150 20% 12%;
+    /* Calla lily forest — deep dark with pink/cream/green */
+    --background: 160 10% 4%;
+    --foreground: 40 30% 90%;
 
-    --card: 60 20% 97%;
-    --card-foreground: 150 20% 12%;
+    --card: 160 8% 8%;
+    --card-foreground: 40 30% 90%;
 
-    --primary: 145 35% 32%;
-    --primary-foreground: 60 30% 96%;
-    --primary-hover: 145 40% 26%;
+    --primary: 340 45% 65%;
+    --primary-foreground: 160 10% 4%;
+    --primary-hover: 340 50% 55%;
 
-    --secondary: 42 40% 72%;
-    --secondary-foreground: 150 20% 12%;
-    --secondary-hover: 42 45% 62%;
+    --secondary: 85 25% 35%;
+    --secondary-foreground: 40 30% 90%;
+    --secondary-hover: 85 30% 28%;
 
-    --accent-red: 16 100% 50%;
-    --accent-pink: 332 100% 73%;
+    /* Calla lily accents */
+    --accent-rose: 340 50% 70%;
+    --accent-cream: 40 40% 85%;
+    --accent-blush: 350 35% 78%;
+    --accent-stem: 100 30% 30%;
 
-    --hero-from: 150 40% 14%;
-    --hero-via: 140 30% 22%;
-    --hero-to: 120 20% 18%;
+    --hero-from: 160 15% 3%;
+    --hero-via: 140 12% 6%;
+    --hero-to: 100 10% 4%;
 
-    --card-yellow: 48 70% 80%;
-    --card-purple: 150 25% 75%;
-    --card-magenta: 42 50% 75%;
-    --card-blue: 160 30% 78%;
-    --card-coral: 30 50% 80%;
-    --card-mint: 145 40% 82%;
-    --card-orange: 38 55% 75%;
-    --card-lavender: 130 20% 85%;
+    --card-yellow: 40 35% 20%;
+    --card-purple: 340 20% 15%;
+    --card-magenta: 350 25% 18%;
+    --card-blue: 160 15% 12%;
+    --card-coral: 340 30% 20%;
+    --card-mint: 100 20% 14%;
+    --card-orange: 40 25% 18%;
+    --card-lavender: 340 15% 14%;
 
-    --muted: 90 8% 85%;
-    --muted-foreground: 150 10% 40%;
+    --muted: 160 5% 15%;
+    --muted-foreground: 40 15% 55%;
 
-    --success: 145 50% 42%;
-    --warning: 42 80% 50%;
+    --success: 100 40% 40%;
+    --warning: 40 70% 50%;
     --error: 0 60% 50%;
-    --info: 180 40% 40%;
+    --info: 180 30% 40%;
 
-    --border: 90 10% 82%;
-    --input: 90 10% 82%;
-    --ring: 145 35% 32%;
+    --border: 160 8% 15%;
+    --input: 160 8% 15%;
+    --ring: 340 45% 65%;
     --radius: 1.25rem;
-    --popover: 60 15% 94%;
-    --popover-foreground: 150 20% 12%;
-    --accent: 60 30% 94%;
-    --accent-foreground: 145 30% 28%;
+    --popover: 160 8% 7%;
+    --popover-foreground: 40 30% 90%;
+    --accent: 160 8% 10%;
+    --accent-foreground: 340 45% 65%;
     --destructive: 0 60% 50%;
     --destructive-foreground: 0 0% 98%;
-    --chart-1: 145 35% 45%;
-    --chart-2: 42 50% 65%;
-    --chart-3: 160 30% 55%;
-    --chart-4: 30 40% 70%;
-    --chart-5: 90 10% 50%;
-    --sidebar: 60 15% 96%;
-    --sidebar-foreground: 150 20% 12%;
-    --sidebar-primary: 145 35% 32%;
-    --sidebar-primary-foreground: 60 30% 96%;
-    --sidebar-accent: 42 40% 72%;
-    --sidebar-accent-foreground: 150 20% 12%;
-    --sidebar-border: 90 10% 82%;
-    --sidebar-ring: 145 35% 32%;
-    --shadow-2xs: 0 1px 3px 0px hsl(150 20% 10% / 0.04);
-    --shadow-xs: 0 1px 3px 0px hsl(150 20% 10% / 0.05);
-    --shadow-sm: 0 1px 3px 0px hsl(150 20% 10% / 0.08), 0 1px 2px -1px hsl(150 20% 10% / 0.06);
-    --shadow: 0 1px 3px 0px hsl(150 20% 10% / 0.08), 0 1px 2px -1px hsl(150 20% 10% / 0.06);
-    --shadow-md: 0 2px 6px 0px hsl(150 20% 10% / 0.08), 0 2px 4px -1px hsl(150 20% 10% / 0.06);
-    --shadow-lg: 0 4px 12px 0px hsl(150 20% 10% / 0.08), 0 4px 6px -1px hsl(150 20% 10% / 0.06);
-    --shadow-xl: 0 8px 20px 0px hsl(150 20% 10% / 0.1), 0 8px 10px -1px hsl(150 20% 10% / 0.06);
-    --shadow-2xl: 0 12px 40px 0px hsl(150 20% 10% / 0.15);
+    --chart-1: 340 45% 65%;
+    --chart-2: 100 25% 35%;
+    --chart-3: 40 40% 85%;
+    --chart-4: 350 35% 78%;
+    --chart-5: 160 10% 40%;
+    --sidebar: 160 8% 6%;
+    --sidebar-foreground: 40 30% 90%;
+    --sidebar-primary: 340 45% 65%;
+    --sidebar-primary-foreground: 160 10% 4%;
+    --sidebar-accent: 100 25% 35%;
+    --sidebar-accent-foreground: 40 30% 90%;
+    --sidebar-border: 160 8% 15%;
+    --sidebar-ring: 340 45% 65%;
+    --shadow-2xs: 0 1px 3px 0px hsl(0 0% 0% / 0.15);
+    --shadow-xs: 0 1px 3px 0px hsl(0 0% 0% / 0.2);
+    --shadow-sm: 0 1px 3px 0px hsl(0 0% 0% / 0.25), 0 1px 2px -1px hsl(0 0% 0% / 0.2);
+    --shadow: 0 1px 3px 0px hsl(0 0% 0% / 0.25), 0 1px 2px -1px hsl(0 0% 0% / 0.2);
+    --shadow-md: 0 2px 6px 0px hsl(0 0% 0% / 0.25), 0 2px 4px -1px hsl(0 0% 0% / 0.2);
+    --shadow-lg: 0 4px 12px 0px hsl(0 0% 0% / 0.25), 0 4px 6px -1px hsl(0 0% 0% / 0.2);
+    --shadow-xl: 0 8px 20px 0px hsl(0 0% 0% / 0.3), 0 8px 10px -1px hsl(0 0% 0% / 0.2);
+    --shadow-2xl: 0 12px 40px 0px hsl(0 0% 0% / 0.4);
     --tracking-normal: 0em;
     --spacing: 0.25rem;
   }
+
   .dark {
-    --background: 150 15% 8%;
-    --foreground: 60 20% 92%;
-    --card: 150 12% 12%;
-    --card-foreground: 60 20% 92%;
-    --popover: 150 12% 15%;
-    --popover-foreground: 60 20% 92%;
-    --primary: 145 40% 55%;
-    --primary-foreground: 150 30% 8%;
-    --secondary: 42 35% 55%;
-    --secondary-foreground: 60 20% 92%;
-    --muted: 150 8% 25%;
-    --muted-foreground: 60 15% 70%;
-    --accent: 145 20% 15%;
-    --accent-foreground: 145 40% 55%;
+    --background: 160 10% 4%;
+    --foreground: 40 30% 90%;
+    --card: 160 8% 8%;
+    --card-foreground: 40 30% 90%;
+    --popover: 160 8% 7%;
+    --popover-foreground: 40 30% 90%;
+    --primary: 340 45% 65%;
+    --primary-foreground: 160 10% 4%;
+    --secondary: 85 25% 35%;
+    --secondary-foreground: 40 30% 90%;
+    --muted: 160 5% 15%;
+    --muted-foreground: 40 15% 55%;
+    --accent: 160 8% 10%;
+    --accent-foreground: 340 45% 65%;
     --destructive: 0 60% 50%;
     --destructive-foreground: 0 0% 98%;
-    --border: 150 10% 20%;
-    --input: 150 10% 20%;
-    --ring: 145 40% 55%;
-    --hero-from: 150 35% 8%;
-    --hero-via: 140 25% 14%;
-    --hero-to: 120 18% 10%;
-    --chart-1: 145 40% 55%;
-    --chart-2: 42 45% 60%;
-    --chart-3: 160 30% 50%;
-    --chart-4: 30 40% 65%;
-    --chart-5: 90 8% 40%;
-    --sidebar: 150 12% 10%;
-    --sidebar-foreground: 60 20% 92%;
-    --sidebar-primary: 145 40% 55%;
-    --sidebar-primary-foreground: 150 30% 8%;
-    --sidebar-accent: 42 35% 55%;
-    --sidebar-accent-foreground: 150 12% 15%;
-    --sidebar-border: 150 10% 20%;
-    --sidebar-ring: 145 40% 55%;
-    --shadow-2xs: 0 1px 3px 0px hsl(0 0% 0% / 0.1);
-    --shadow-xs: 0 1px 3px 0px hsl(0 0% 0% / 0.12);
-    --shadow-sm: 0 1px 3px 0px hsl(0 0% 0% / 0.15), 0 1px 2px -1px hsl(0 0% 0% / 0.12);
-    --shadow: 0 1px 3px 0px hsl(0 0% 0% / 0.15), 0 1px 2px -1px hsl(0 0% 0% / 0.12);
-    --shadow-md: 0 2px 6px 0px hsl(0 0% 0% / 0.15), 0 2px 4px -1px hsl(0 0% 0% / 0.12);
-    --shadow-lg: 0 4px 12px 0px hsl(0 0% 0% / 0.15), 0 4px 6px -1px hsl(0 0% 0% / 0.12);
-    --shadow-xl: 0 8px 20px 0px hsl(0 0% 0% / 0.18), 0 8px 10px -1px hsl(0 0% 0% / 0.12);
-    --shadow-2xl: 0 12px 40px 0px hsl(0 0% 0% / 0.25);
+    --border: 160 8% 15%;
+    --input: 160 8% 15%;
+    --ring: 340 45% 65%;
+    --hero-from: 160 15% 3%;
+    --hero-via: 140 12% 6%;
+    --hero-to: 100 10% 4%;
+    --chart-1: 340 45% 65%;
+    --chart-2: 100 25% 35%;
+    --chart-3: 40 40% 85%;
+    --chart-4: 350 35% 78%;
+    --chart-5: 160 10% 40%;
+    --sidebar: 160 8% 6%;
+    --sidebar-foreground: 40 30% 90%;
+    --sidebar-primary: 340 45% 65%;
+    --sidebar-primary-foreground: 160 10% 4%;
+    --sidebar-accent: 100 25% 35%;
+    --sidebar-accent-foreground: 160 8% 10%;
+    --sidebar-border: 160 8% 15%;
+    --sidebar-ring: 340 45% 65%;
+    --shadow-2xs: 0 1px 3px 0px hsl(0 0% 0% / 0.2);
+    --shadow-xs: 0 1px 3px 0px hsl(0 0% 0% / 0.25);
+    --shadow-sm: 0 1px 3px 0px hsl(0 0% 0% / 0.3), 0 1px 2px -1px hsl(0 0% 0% / 0.25);
+    --shadow: 0 1px 3px 0px hsl(0 0% 0% / 0.3), 0 1px 2px -1px hsl(0 0% 0% / 0.25);
+    --shadow-md: 0 2px 6px 0px hsl(0 0% 0% / 0.3), 0 2px 4px -1px hsl(0 0% 0% / 0.25);
+    --shadow-lg: 0 4px 12px 0px hsl(0 0% 0% / 0.3), 0 4px 6px -1px hsl(0 0% 0% / 0.25);
+    --shadow-xl: 0 8px 20px 0px hsl(0 0% 0% / 0.35), 0 8px 10px -1px hsl(0 0% 0% / 0.25);
+    --shadow-2xl: 0 12px 40px 0px hsl(0 0% 0% / 0.5);
   }
 }
 
@@ -154,17 +159,17 @@
 
 @layer components {
   .section-header {
-    @apply uppercase font-bold text-xs tracking-[3px] text-foreground/50 mb-6;
+    @apply uppercase font-bold text-xs tracking-[3px] text-primary/50 mb-6;
     font-family: "DM Sans", system-ui, sans-serif;
   }
 
   .link-arrow {
-    @apply underline decoration-foreground/30 underline-offset-4 
-           hover:decoration-foreground transition-all duration-200;
+    @apply underline decoration-primary/30 underline-offset-4 
+           hover:decoration-primary transition-all duration-200;
   }
 
   .divider {
-    @apply border-t border-foreground/10;
+    @apply border-t border-primary/10;
   }
 
   .card-hover {
@@ -176,7 +181,7 @@
     @apply rounded-2xl overflow-hidden transition-all duration-500;
   }
 
-  /* Hero gradient — deep forest canopy */
+  /* Hero gradient — deep forest canopy at night */
   .hero-gradient {
     background: linear-gradient(
       170deg,
@@ -194,19 +199,30 @@
     content: "";
     position: absolute;
     inset: 0;
-    opacity: 0.06;
+    opacity: 0.04;
     background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
     pointer-events: none;
     mix-blend-mode: soft-light;
   }
 
-  /* Petal shape for floating elements */
+  /* Petal shape — calla lily curves */
   .petal {
     clip-path: ellipse(40% 50% at 50% 50%);
   }
 
+  /* Calla lily curved petal */
+  .calla-petal {
+    border-radius: 60% 40% 70% 30% / 50% 60% 40% 50%;
+  }
+
   /* Stem line decoration */
   .stem-line {
-    @apply w-px bg-primary/20 mx-auto;
+    @apply w-px bg-secondary/30 mx-auto;
+  }
+
+  /* Glow effect for accents */
+  .petal-glow {
+    box-shadow: 0 0 60px 20px hsl(340 45% 65% / 0.08),
+                0 0 120px 40px hsl(340 45% 65% / 0.04);
   }
 }

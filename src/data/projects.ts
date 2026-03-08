@@ -11,67 +11,67 @@ export interface Project {
 export const projects: Project[] = [
   {
     id: "1",
-    title: "Clinical Data Pipeline",
+    title: "Fintech Brand & Web Platform",
     description:
-      "Built an end-to-end data pipeline for processing clinical trial datasets, reducing analysis turnaround from weeks to hours using Python and cloud infrastructure.",
-    tags: ["Python", "Data Engineering", "Healthcare"],
+      "End-to-end brand identity and responsive web design for a fintech startup — from logo and color system to a full marketing site with animated interactions.",
+    tags: ["Brand Identity", "Web Design", "Motion"],
     image:
-      "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=500&fit=crop",
     link: "#",
     colorClass: "bg-vibrant-blue",
   },
   {
     id: "2",
-    title: "Health Outcomes Dashboard",
+    title: "E-Commerce Redesign",
     description:
-      "Interactive visualization platform for tracking patient outcomes across multiple treatment cohorts, used by research teams at three major hospitals.",
-    tags: ["React", "D3.js", "Medical Research"],
+      "Complete UX overhaul and visual redesign of a fashion e-commerce platform, improving conversion by 40% with a cleaner product discovery flow.",
+    tags: ["UX Design", "E-Commerce", "Figma"],
     image:
-      "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=800&h=600&fit=crop",
-    link: "#",
-    colorClass: "bg-vibrant-purple",
-  },
-  {
-    id: "3",
-    title: "Predictive Risk Model",
-    description:
-      "Developed machine learning models to identify at-risk patient populations, improving early intervention rates by 34% in a pilot program.",
-    tags: ["Machine Learning", "Statistics", "Public Health"],
-    image:
-      "https://images.unsplash.com/photo-1532187863486-abf9dbad1b69?w=800&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&h=500&fit=crop",
     link: "#",
     colorClass: "bg-vibrant-coral",
   },
   {
-    id: "4",
-    title: "Genomics Research Tool",
+    id: "3",
+    title: "SaaS Design System",
     description:
-      "Open-source tool for analyzing genomic sequence data, adopted by research labs internationally for variant classification workflows.",
-    tags: ["Bioinformatics", "Open Source", "R"],
+      "Built a scalable design system with 120+ components for a B2B SaaS product — tokens, patterns, and documentation that bridged design and engineering.",
+    tags: ["Design Systems", "Components", "Documentation"],
     image:
-      "https://images.unsplash.com/photo-1507413245164-6160d8298b31?w=800&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1545235617-9465d2a55698?w=800&h=500&fit=crop",
     link: "#",
-    colorClass: "bg-vibrant-mint",
+    colorClass: "bg-vibrant-purple",
   },
   {
-    id: "5",
-    title: "Telemedicine Platform",
+    id: "4",
+    title: "Creative Agency Website",
     description:
-      "Designed and shipped the frontend for a telemedicine app serving rural communities, enabling 10,000+ remote consultations in its first year.",
-    tags: ["React", "TypeScript", "Telehealth"],
+      "Award-worthy portfolio site for a creative agency — bold typography, scroll-driven animations, and a narrative structure that showcases their best work.",
+    tags: ["Web Design", "Animation", "Framer"],
     image:
-      "https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=800&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1561070791-2526d30994b5?w=800&h=500&fit=crop",
     link: "#",
     colorClass: "bg-vibrant-yellow",
   },
   {
-    id: "6",
-    title: "Medical NLP System",
+    id: "5",
+    title: "Health & Wellness App",
     description:
-      "Natural language processing system for extracting structured data from unstructured clinical notes, achieving 92% accuracy on entity recognition.",
-    tags: ["NLP", "Python", "Clinical Informatics"],
+      "Mobile-first product design for a wellness app — calming UI, intuitive onboarding, and data visualization that makes health tracking feel effortless.",
+    tags: ["Product Design", "Mobile", "UI/UX"],
     image:
-      "https://images.unsplash.com/photo-1555949963-aa79dcee981c?w=800&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=800&h=500&fit=crop",
+    link: "#",
+    colorClass: "bg-vibrant-mint",
+  },
+  {
+    id: "6",
+    title: "Editorial Magazine Site",
+    description:
+      "Typographic-first editorial website for an online magazine — mastered grid layouts, reading experience, and responsive image treatments.",
+    tags: ["Typography", "Editorial", "Responsive"],
+    image:
+      "https://images.unsplash.com/photo-1586075010923-2dd4570fb338?w=800&h=500&fit=crop",
     link: "#",
     colorClass: "bg-vibrant-lavender",
   },

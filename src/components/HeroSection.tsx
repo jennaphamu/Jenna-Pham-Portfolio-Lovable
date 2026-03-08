@@ -11,9 +11,19 @@ const HeroSection = () => {
               your name
             </h1>
             <p className="text-lg md:text-xl leading-relaxed text-foreground/70 max-w-xl font-serif italic">
-              working at the intersection of technology, data science, and
-              medicine — building tools that turn complex health data into
-              actionable insights and better patient outcomes.
+              designing digital experiences that feel intuitive, look beautiful,
+              and actually solve problems — from brand identities to full web
+              platforms.
+            </p>
+
+            <p className="mt-6 text-sm text-foreground/50 leading-relaxed max-w-md">
+              currently open to freelance projects and full-time roles.
+              <br />
+              working on something cool?{" "}
+              <a href="#contact" className="link-arrow">
+                get in touch
+              </a>
+              .
             </p>
 
             <div className="mt-8 flex flex-col gap-1 text-sm text-foreground/50">
@@ -27,7 +37,7 @@ const HeroSection = () => {
           <div className="flex flex-col gap-6">
             <div className="rounded-2xl overflow-hidden border border-foreground/10 aspect-square">
               <img
-                src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=400&h=400&fit=crop"
+                src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=400&h=400&fit=crop"
                 alt="Profile photo"
                 className="w-full h-full object-cover"
               />
@@ -37,10 +47,11 @@ const HeroSection = () => {
               <p className="section-header">elsewhere</p>
               <div className="flex flex-col gap-2">
                 {[
+                  { label: "dribbble", href: "https://dribbble.com" },
+                  { label: "behance", href: "https://behance.net" },
                   { label: "linkedin", href: "https://linkedin.com" },
-                  { label: "github", href: "https://github.com" },
-                  { label: "google scholar", href: "https://scholar.google.com" },
                   { label: "twitter / x", href: "https://x.com" },
+                  { label: "instagram", href: "https://instagram.com" },
                 ].map((link) => (
                   <a
                     key={link.label}

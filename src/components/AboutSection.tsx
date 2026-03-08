@@ -1,34 +1,5 @@
 import { ArrowUpRight } from "lucide-react";
 
-interface CurrentItem {
-  number: string;
-  text: string;
-  links?: { label: string; href: string }[];
-}
-
-const currentItems: CurrentItem[] = [
-  {
-    number: "01",
-    text: "researching applied machine learning in clinical settings, developing predictive models for patient risk stratification and early intervention.",
-    links: [
-      { label: "Your Lab", href: "#" },
-      { label: "Your Institution", href: "#" },
-    ],
-  },
-  {
-    number: "02",
-    text: "building open-source tools for health data analysis — making complex biostatistics accessible to clinicians and researchers without deep technical backgrounds.",
-  },
-  {
-    number: "03",
-    text: "teaching a graduate seminar on computational methods in medicine. previously lectured on data visualization for health outcomes.",
-  },
-  {
-    number: "04",
-    text: "sometimes i write about the gap between what technology promises for healthcare and what it actually delivers. working on a longer piece about AI in diagnostics.",
-  },
-];
-
 const AboutSection = () => {
   return (
     <section id="about" className="px-6 md:px-12 lg:px-20 py-16 md:py-24">
@@ -39,38 +10,38 @@ const AboutSection = () => {
           </div>
 
           <div className="space-y-8">
-            {currentItems.map((item) => (
+            {[
+              {
+                number: "01",
+                text: "designing websites, landing pages, and digital brand experiences for startups and creative agencies — turning ideas into polished, pixel-perfect interfaces.",
+              },
+              {
+                number: "02",
+                text: "crafting design systems and component libraries that scale — making it easy for dev teams to build consistent, beautiful products without reinventing the wheel.",
+              },
+              {
+                number: "03",
+                text: "exploring motion design and micro-interactions, creating moments of delight that make digital products feel alive and responsive.",
+              },
+              {
+                number: "04",
+                text: "sharing process and thinking through occasional case studies. always learning, always iterating.",
+              },
+            ].map((item) => (
               <div key={item.number} className="flex gap-6">
                 <span className="section-number shrink-0 pt-0.5">
                   {item.number}
                 </span>
                 <p className="text-base md:text-lg leading-relaxed text-foreground/80">
                   {item.text}
-                  {item.links?.map((link, i) => (
-                    <span key={link.label}>
-                      {" "}
-                      {i > 0 && " and "}
-                      <a
-                        href={link.href}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="link-arrow inline-flex items-baseline gap-0.5 font-medium text-foreground"
-                      >
-                        {link.label}
-                        <ArrowUpRight className="w-3 h-3 inline" />
-                      </a>
-                    </span>
-                  ))}
                 </p>
               </div>
             ))}
           </div>
         </div>
 
-        {/* Divider */}
         <div className="divider my-16" />
 
-        {/* Past */}
         <div className="grid grid-cols-1 md:grid-cols-[200px_1fr] gap-8 md:gap-16">
           <div>
             <p className="section-header">background</p>
@@ -80,19 +51,19 @@ const AboutSection = () => {
             {[
               {
                 number: "01",
-                text: "PhD in Biomedical Informatics — developed novel approaches to clinical text mining and structured data extraction from electronic health records.",
+                text: "studied visual communication and interaction design. fell in love with the space where aesthetics meets usability.",
               },
               {
                 number: "02",
-                text: "previously led data science at a health-tech startup, building the analytics infrastructure that served 50,000+ patients.",
+                text: "previously designed digital products at [Agency / Company] — shipped web experiences for brands in fintech, e-commerce, and media.",
               },
               {
                 number: "03",
-                text: "published in Nature Digital Medicine, JAMIA, and presented at AMIA. reviewer for several computational biology journals.",
+                text: "freelanced for 2+ years, working with clients from early-stage startups to established brands, delivering everything from landing pages to full design systems.",
               },
               {
                 number: "04",
-                text: "received the [Your Award] for contributions to open-source health informatics tools.",
+                text: "tools of choice: Figma, Framer, After Effects, and a healthy obsession with typography and spacing.",
               },
             ].map((item) => (
               <div key={item.number} className="flex gap-6">

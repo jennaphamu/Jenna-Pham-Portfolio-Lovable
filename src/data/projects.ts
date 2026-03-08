@@ -11,68 +11,68 @@ export interface Project {
 export const projects: Project[] = [
   {
     id: "1",
-    title: "Fintech Brand & Web Platform",
+    title: "UCSF Oral & Maxillofacial Surgery",
     description:
-      "End-to-end brand identity and responsive web design for a fintech startup — from logo and color system to a full marketing site with animated interactions.",
-    tags: ["Brand Identity", "Web Design", "Motion"],
+      "Coordinating two residency programs across UCSF and affiliates — managing schedules, onboarding, compliance for 40+ residents, and directing a $2M+ budget while growing Instagram reach by 77.8%.",
+    tags: ["Health Operations", "Program Coordination", "Budget Management"],
     image:
-      "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=500&fit=crop",
+      "https://images.unsplash.com/photo-1579684385127-1ef15d508118?w=800&h=500&fit=crop",
     link: "#",
-    colorClass: "bg-vibrant-blue",
+    colorClass: "bg-card",
   },
   {
     id: "2",
-    title: "E-Commerce Redesign",
+    title: "Best Visualization — Data@UCI Datathon",
     description:
-      "Complete UX overhaul and visual redesign of a fashion e-commerce platform, improving conversion by 40% with a cleaner product discovery flow.",
-    tags: ["UX Design", "E-Commerce", "Figma"],
+      "Awarded Best Visualization for merging global datasets on pollution and happiness using Python, Tableau, and Folium — demonstrating data storytelling for environmental health impact.",
+    tags: ["Python", "Tableau", "Data Visualization"],
     image:
-      "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&h=500&fit=crop",
+      "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=500&fit=crop",
     link: "#",
-    colorClass: "bg-vibrant-coral",
+    colorClass: "bg-card",
   },
   {
     id: "3",
-    title: "SaaS Design System",
+    title: "AACI Patient Navigation",
     description:
-      "Built a scalable design system with 120+ components for a B2B SaaS product — tokens, patterns, and documentation that bridged design and engineering.",
-    tags: ["Design Systems", "Components", "Documentation"],
+      "Developed 15 personalized care plans, conducted outreach to 500+ community members, and provided Vietnamese interpretation for 25+ visits — connecting patients to Medi-Cal, housing, and behavioral health services.",
+    tags: ["Community Health", "Patient Care", "Health Equity"],
     image:
-      "https://images.unsplash.com/photo-1545235617-9465d2a55698?w=800&h=500&fit=crop",
+      "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=800&h=500&fit=crop",
     link: "#",
-    colorClass: "bg-vibrant-purple",
+    colorClass: "bg-card",
   },
   {
     id: "4",
-    title: "Creative Agency Website",
+    title: "Bay Area Cancer Connections",
     description:
-      "Award-worthy portfolio site for a creative agency — bold typography, scroll-driven animations, and a narrative structure that showcases their best work.",
-    tags: ["Web Design", "Animation", "Framer"],
+      "Digitizing fundraising operations, organizing donor groups, and conducting market research to uncover new program opportunities for cancer support services.",
+    tags: ["Digital Health", "Nonprofit", "Market Research"],
     image:
-      "https://images.unsplash.com/photo-1561070791-2526d30994b5?w=800&h=500&fit=crop",
+      "https://images.unsplash.com/photo-1532938911079-1b06ac7ceec7?w=800&h=500&fit=crop",
     link: "#",
-    colorClass: "bg-vibrant-yellow",
+    colorClass: "bg-card",
   },
   {
     id: "5",
-    title: "Health & Wellness App",
+    title: "UCI Merage Student Mentorship",
     description:
-      "Mobile-first product design for a wellness app — calming UI, intuitive onboarding, and data visualization that makes health tracking feel effortless.",
-    tags: ["Product Design", "Mobile", "UI/UX"],
+      "Mentored 15+ students on interviewing, networking, and public speaking. Organized 10+ professional events serving 1,000+ students with marketing campaigns that elevated engagement.",
+    tags: ["Leadership", "Mentorship", "Event Management"],
     image:
-      "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=800&h=500&fit=crop",
+      "https://images.unsplash.com/photo-1523240795612-9a054b0db644?w=800&h=500&fit=crop",
     link: "#",
-    colorClass: "bg-vibrant-mint",
+    colorClass: "bg-card",
   },
   {
     id: "6",
-    title: "Editorial Magazine Site",
+    title: "English Teaching — Vietnam & Cambodia",
     description:
-      "Typographic-first editorial website for an online magazine — mastered grid layouts, reading experience, and responsive image treatments.",
-    tags: ["Typography", "Editorial", "Responsive"],
+      "Designed culturally immersive English lessons incorporating Vietnamese literature and poetry. Led daily classes and home visits to improve education access for rural students.",
+    tags: ["Education", "Cross-Cultural", "Service"],
     image:
-      "https://images.unsplash.com/photo-1586075010923-2dd4570fb338?w=800&h=500&fit=crop",
+      "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=800&h=500&fit=crop",
     link: "#",
-    colorClass: "bg-vibrant-lavender",
+    colorClass: "bg-card",
   },
 ];

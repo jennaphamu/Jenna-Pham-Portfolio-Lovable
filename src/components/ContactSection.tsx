@@ -30,12 +30,12 @@ const ContactSection = () => {
           transition={{ duration: 0.6 }}
           className="mb-12"
         >
-          <p className="section-header">reach out</p>
+          <p className="section-header">connect</p>
           <h2 className="text-4xl md:text-5xl font-display font-light tracking-tight mb-6 text-foreground/90">
-            Let's grow something
+            Let's collaborate
           </h2>
           <p className="text-base md:text-lg text-foreground/40 leading-relaxed max-w-lg mx-auto font-display italic">
-            Have a project in mind? Let's plant the seed together.
+            Interested in health tech, community impact, or data-driven solutions? Let's connect.
           </p>
         </motion.div>
 
@@ -66,7 +66,7 @@ const ContactSection = () => {
             className={inputStyles}
           />
           <textarea
-            placeholder="tell me about your project"
+            placeholder="what would you like to discuss?"
             required
             rows={4}
             value={form.message}

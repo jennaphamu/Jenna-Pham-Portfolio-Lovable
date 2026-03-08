@@ -28,11 +28,10 @@ const ContactSection = () => {
           </div>
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16">
-            {/* Left — text */}
             <div>
               <p className="text-base md:text-lg leading-relaxed text-foreground/70 mb-6">
-                interested in collaborating on research, have a project idea, or
-                just want to say hello? i'd love to hear from you.
+                have a project in mind, need a designer for your team, or just
+                want to chat about type and pixels? i'd love to hear from you.
               </p>
               <div className="space-y-2 text-sm">
                 <a
@@ -45,7 +44,6 @@ const ContactSection = () => {
               </div>
             </div>
 
-            {/* Right — form */}
             <form onSubmit={handleSubmit} className="space-y-6">
               <input
                 type="text"
@@ -64,7 +62,7 @@ const ContactSection = () => {
                 className={inputStyles}
               />
               <textarea
-                placeholder="message"
+                placeholder="tell me about your project"
                 required
                 rows={4}
                 value={form.message}

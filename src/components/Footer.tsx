@@ -1,13 +1,21 @@
+import { motion } from "framer-motion";
+
 const Footer = () => {
   return (
-    <footer className="px-6 md:px-12 lg:px-20 py-8">
-      <div className="max-w-6xl mx-auto divider pt-8">
-        <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
+    <motion.footer
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }}
+      viewport={{ once: true }}
+      transition={{ duration: 0.5 }}
+      className="px-6 md:px-12 lg:px-20 py-8"
+    >
+      <div className="max-w-5xl mx-auto divider pt-8">
+        <div className="flex flex-col md:flex-row justify-between items-center gap-4 text-center">
           <p className="text-xs text-foreground/30">
             © {new Date().getFullYear()} Jenna Pham
           </p>
           <div className="flex items-center gap-6">
-            {["linkedin", "github", "scholar", "twitter"].map((link) => (
+            {["dribbble", "behance", "linkedin", "twitter"].map((link) => (
               <a
                 key={link}
                 href="#"
@@ -19,7 +27,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
-    </footer>
+    </motion.footer>
   );
 };
 

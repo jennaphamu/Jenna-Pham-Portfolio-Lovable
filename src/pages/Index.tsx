@@ -11,11 +11,10 @@ const Index = () => {
       <Header />
       <main>
         <HeroSection />
-        <div className="divider mx-6 md:mx-12 lg:mx-20 max-w-6xl lg:mx-auto" />
-        <AboutSection />
-        <div className="divider mx-6 md:mx-12 lg:mx-20 max-w-6xl lg:mx-auto" />
         <ProjectsSection />
-        <div className="divider mx-6 md:mx-12 lg:mx-20 max-w-6xl lg:mx-auto" />
+        <div className="divider mx-6 md:mx-12 lg:mx-20 max-w-5xl lg:mx-auto" />
+        <AboutSection />
+        <div className="divider mx-6 md:mx-12 lg:mx-20 max-w-5xl lg:mx-auto" />
         <ContactSection />
       </main>
       <Footer />

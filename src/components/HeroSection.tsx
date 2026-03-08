@@ -1,103 +1,76 @@
-import { ArrowUpRight } from "lucide-react";
 import { motion } from "framer-motion";
 
 const HeroSection = () => {
   return (
-    <section className="px-6 md:px-12 lg:px-20 pt-20 md:pt-32 pb-16 md:pb-24">
-      <div className="max-w-6xl mx-auto">
-        <div className="grid grid-cols-1 md:grid-cols-[1fr_280px] gap-12 md:gap-16 items-start">
-          {/* Left — intro text */}
-          <div>
-            <motion.h1
-              initial={{ opacity: 0, y: 40 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, ease: [0.25, 0.4, 0.25, 1] }}
-              className="text-4xl md:text-6xl lg:text-7xl font-bold tracking-tight leading-[1.05] mb-8"
-            >
-              Jenna Pham
-            </motion.h1>
-            <motion.p
-              initial={{ opacity: 0, y: 30 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 0.15, ease: [0.25, 0.4, 0.25, 1] }}
-              className="text-lg md:text-xl leading-relaxed text-foreground/70 max-w-xl font-serif italic"
-            >
-              designing digital experiences that feel intuitive, look beautiful,
-              and actually solve problems — from brand identities to full web
-              platforms.
-            </motion.p>
+    <section className="hero-gradient noise-overlay relative min-h-screen flex items-center justify-center overflow-hidden">
+      <div className="relative z-10 text-center px-6 max-w-4xl mx-auto">
+        <motion.p
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.7, delay: 0.2 }}
+          className="text-white/70 text-lg md:text-xl mb-4 font-light"
+        >
+          I'm Jenna
+        </motion.p>
 
-            <motion.p
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.7, delay: 0.3, ease: [0.25, 0.4, 0.25, 1] }}
-              className="mt-6 text-sm text-foreground/50 leading-relaxed max-w-md"
-            >
-              currently open to freelance projects and full-time roles.
-              <br />
-              working on something cool?{" "}
-              <a href="#contact" className="link-arrow">
-                get in touch
-              </a>
-              .
-            </motion.p>
+        <motion.h1
+          initial={{ opacity: 0, y: 40 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.9, delay: 0.35, ease: [0.25, 0.4, 0.25, 1] }}
+          className="text-5xl md:text-7xl lg:text-8xl font-bold tracking-tight leading-[1.05] text-white mb-2"
+        >
+          Designing for a
+        </motion.h1>
 
-            <motion.div
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ duration: 0.6, delay: 0.45 }}
-              className="mt-8 flex flex-col gap-1 text-sm text-foreground/50"
-            >
-              <a href="mailto:hello@example.com" className="link-arrow w-fit">
-                hello@example.com
-              </a>
-            </motion.div>
-          </div>
+        <motion.h1
+          initial={{ opacity: 0, y: 40 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.9, delay: 0.45, ease: [0.25, 0.4, 0.25, 1] }}
+          className="text-5xl md:text-7xl lg:text-8xl tracking-tight leading-[1.05] text-white mb-8 font-display italic"
+        >
+          better future.
+        </motion.h1>
 
-          {/* Right — photo + links */}
-          <motion.div
-            initial={{ opacity: 0, scale: 0.92 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.9, delay: 0.2, ease: [0.25, 0.4, 0.25, 1] }}
-            className="flex flex-col gap-6"
+        <motion.p
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.7, delay: 0.6 }}
+          className="text-white/60 text-base md:text-lg max-w-md mx-auto leading-relaxed"
+        >
+          Storytelling is my superpower.
+          <br />
+          I design to innovate.
+        </motion.p>
+
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 0.6, delay: 0.8 }}
+          className="mt-10"
+        >
+          <a
+            href="#work"
+            className="inline-flex items-center gap-2 text-white/80 text-sm border border-white/20 rounded-full px-6 py-2.5 hover:bg-white/10 transition-all duration-300"
           >
-            <div className="rounded-2xl overflow-hidden border border-foreground/10 aspect-square">
-              <img
-                src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=400&h=400&fit=crop"
-                alt="Profile photo"
-                className="w-full h-full object-cover"
-              />
-            </div>
-
-            <div>
-              <p className="section-header">elsewhere</p>
-              <div className="flex flex-col gap-2">
-                {[
-                  { label: "dribbble", href: "https://dribbble.com" },
-                  { label: "behance", href: "https://behance.net" },
-                  { label: "linkedin", href: "https://linkedin.com" },
-                  { label: "twitter / x", href: "https://x.com" },
-                  { label: "instagram", href: "https://instagram.com" },
-                ].map((link, i) => (
-                  <motion.a
-                    key={link.label}
-                    href={link.href}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    initial={{ opacity: 0, x: -10 }}
-                    animate={{ opacity: 1, x: 0 }}
-                    transition={{ duration: 0.4, delay: 0.5 + i * 0.06 }}
-                    className="text-sm link-arrow w-fit inline-flex items-center gap-1"
-                  >
-                    {link.label}
-                    <ArrowUpRight className="w-3 h-3" />
-                  </motion.a>
-                ))}
-              </div>
-            </div>
-          </motion.div>
-        </div>
+            view my work
+            <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 14l-7 7m0 0l-7-7m7 7V3" />
+            </svg>
+          </a>
+        </motion.div>
       </div>
+
+      {/* Floating gradient orbs */}
+      <motion.div
+        animate={{ y: [0, -20, 0], x: [0, 10, 0] }}
+        transition={{ duration: 8, repeat: Infinity, ease: "easeInOut" }}
+        className="absolute top-1/4 left-1/4 w-64 h-64 rounded-full bg-white/5 blur-3xl"
+      />
+      <motion.div
+        animate={{ y: [0, 15, 0], x: [0, -15, 0] }}
+        transition={{ duration: 10, repeat: Infinity, ease: "easeInOut", delay: 1 }}
+        className="absolute bottom-1/3 right-1/4 w-80 h-80 rounded-full bg-white/5 blur-3xl"
+      />
     </section>
   );
 };

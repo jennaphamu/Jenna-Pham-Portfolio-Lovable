@@ -6,7 +6,7 @@ const Header = () => {
       <div className="px-6 md:px-12 lg:px-20 py-5">
         <div className="flex items-center justify-between max-w-6xl mx-auto">
           <Link to="/" className="text-lg font-bold tracking-tight">
-            your name
+            Jenna Pham
           </Link>
 
           <nav className="flex items-center gap-6 md:gap-8">

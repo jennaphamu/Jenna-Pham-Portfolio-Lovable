@@ -8,7 +8,7 @@ const HeroSection = () => {
           {/* Left — intro text */}
           <div>
             <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold tracking-tight leading-[1.05] mb-8">
-              your name
+              Jenna Pham
             </h1>
             <p className="text-lg md:text-xl leading-relaxed text-foreground/70 max-w-xl font-serif italic">
               designing digital experiences that feel intuitive, look beautiful,

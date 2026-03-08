@@ -1,34 +1,28 @@
 import { Link } from "react-router-dom";
-import Button from "./Button";
 
 const Header = () => {
   return (
-    <header className="sticky top-0 z-50 bg-background border-b border-foreground/5">
-      <div className="px-5 md:px-20 py-5 md:py-6">
-        <div className="flex items-center justify-between">
-          <Link to="/" className="font-serif text-2xl md:text-3xl font-bold italic">
-            YN.
+    <header className="sticky top-0 z-50 bg-background/80 backdrop-blur-md">
+      <div className="px-6 md:px-12 lg:px-20 py-5">
+        <div className="flex items-center justify-between max-w-6xl mx-auto">
+          <Link to="/" className="text-lg font-bold tracking-tight">
+            your name
           </Link>
 
-          <nav className="hidden md:flex items-center gap-8">
-            <a href="#about" className="nav-text hover:opacity-60 transition-opacity">
-              ABOUT
+          <nav className="flex items-center gap-6 md:gap-8">
+            <a href="#work" className="text-sm text-foreground/60 hover:text-foreground transition-colors">
+              work
             </a>
-            <a href="#projects" className="nav-text hover:opacity-60 transition-opacity">
-              WORK
+            <a href="#about" className="text-sm text-foreground/60 hover:text-foreground transition-colors">
+              about
             </a>
-            <a href="#contact">
-              <Button variant="filled" showArrow={false} className="text-xs py-2 px-5">
-                CONTACT
-              </Button>
+            <a
+              href="#contact"
+              className="text-sm font-medium underline underline-offset-4 decoration-foreground/30 hover:decoration-foreground transition-all"
+            >
+              contact
             </a>
           </nav>
-
-          <a href="#contact" className="md:hidden">
-            <Button variant="filled" showArrow={false} className="text-xs py-2 px-5">
-              CONTACT
-            </Button>
-          </a>
         </div>
       </div>
     </header>

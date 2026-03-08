@@ -11,102 +11,86 @@ const fadeUp = {
 
 const AboutSection = () => {
   return (
-    <section id="about" className="px-6 md:px-12 lg:px-20 py-16 md:py-24">
-      <div className="max-w-6xl mx-auto">
-        <div className="grid grid-cols-1 md:grid-cols-[200px_1fr] gap-8 md:gap-16">
+    <section id="about" className="px-6 md:px-12 lg:px-20 py-20 md:py-32">
+      <div className="max-w-4xl mx-auto text-center">
+        <motion.h2
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: "-60px" }}
+          transition={{ duration: 0.6 }}
+          className="text-3xl md:text-4xl font-bold tracking-tight mb-16"
+        >
+          About
+        </motion.h2>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 text-left mb-20">
           <motion.div
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            viewport={{ once: true, margin: "-60px" }}
-            transition={{ duration: 0.5 }}
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, margin: "-40px" }}
+            transition={{ duration: 0.6 }}
           >
             <p className="section-header">currently</p>
           </motion.div>
-
-          <div className="space-y-8">
+          <div className="space-y-6">
             {[
-              {
-                number: "01",
-                text: "designing websites, landing pages, and digital brand experiences for startups and creative agencies — turning ideas into polished, pixel-perfect interfaces.",
-              },
-              {
-                number: "02",
-                text: "crafting design systems and component libraries that scale — making it easy for dev teams to build consistent, beautiful products without reinventing the wheel.",
-              },
-              {
-                number: "03",
-                text: "exploring motion design and micro-interactions, creating moments of delight that make digital products feel alive and responsive.",
-              },
-              {
-                number: "04",
-                text: "sharing process and thinking through occasional case studies. always learning, always iterating.",
-              },
-            ].map((item, i) => (
+              "designing websites, landing pages, and digital brand experiences for startups and creative agencies.",
+              "crafting design systems and component libraries that scale — bridging design and engineering.",
+              "exploring motion design and micro-interactions that make products feel alive.",
+              "sharing process through case studies. always learning, always iterating.",
+            ].map((text, i) => (
               <motion.div
-                key={item.number}
+                key={i}
                 custom={i}
                 variants={fadeUp}
                 initial="hidden"
                 whileInView="visible"
                 viewport={{ once: true, margin: "-40px" }}
-                className="flex gap-6"
+                className="flex gap-4"
               >
-                <span className="section-number shrink-0 pt-0.5">
-                  {item.number}
+                <span className="font-mono text-sm text-foreground/30 shrink-0 pt-0.5">
+                  0{i + 1}
                 </span>
-                <p className="text-base md:text-lg leading-relaxed text-foreground/80">
-                  {item.text}
+                <p className="text-base leading-relaxed text-foreground/70">
+                  {text}
                 </p>
               </motion.div>
             ))}
           </div>
         </div>
 
-        <div className="divider my-16" />
+        <div className="divider mb-20" />
 
-        <div className="grid grid-cols-1 md:grid-cols-[200px_1fr] gap-8 md:gap-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 text-left">
           <motion.div
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            viewport={{ once: true, margin: "-60px" }}
-            transition={{ duration: 0.5 }}
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, margin: "-40px" }}
+            transition={{ duration: 0.6 }}
           >
             <p className="section-header">background</p>
           </motion.div>
-
           <div className="space-y-6">
             {[
-              {
-                number: "01",
-                text: "studied visual communication and interaction design. fell in love with the space where aesthetics meets usability.",
-              },
-              {
-                number: "02",
-                text: "previously designed digital products at [Agency / Company] — shipped web experiences for brands in fintech, e-commerce, and media.",
-              },
-              {
-                number: "03",
-                text: "freelanced for 2+ years, working with clients from early-stage startups to established brands, delivering everything from landing pages to full design systems.",
-              },
-              {
-                number: "04",
-                text: "tools of choice: Figma, Framer, After Effects, and a healthy obsession with typography and spacing.",
-              },
-            ].map((item, i) => (
+              "studied visual communication and interaction design — fell in love with where aesthetics meets usability.",
+              "shipped web experiences for brands in fintech, e-commerce, and media.",
+              "freelanced for 2+ years, delivering everything from landing pages to full design systems.",
+              "tools of choice: Figma, Framer, After Effects, and a healthy obsession with typography.",
+            ].map((text, i) => (
               <motion.div
-                key={item.number}
+                key={i}
                 custom={i}
                 variants={fadeUp}
                 initial="hidden"
                 whileInView="visible"
                 viewport={{ once: true, margin: "-40px" }}
-                className="flex gap-6"
+                className="flex gap-4"
               >
-                <span className="section-number shrink-0 pt-0.5">
-                  {item.number}
+                <span className="font-mono text-sm text-foreground/30 shrink-0 pt-0.5">
+                  0{i + 1}
                 </span>
-                <p className="text-base md:text-lg leading-relaxed text-foreground/80">
-                  {item.text}
+                <p className="text-base leading-relaxed text-foreground/70">
+                  {text}
                 </p>
               </motion.div>
             ))}

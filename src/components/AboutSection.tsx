@@ -1,13 +1,27 @@
-import { ArrowUpRight } from "lucide-react";
+import { motion } from "framer-motion";
+
+const fadeUp = {
+  hidden: { opacity: 0, y: 24 },
+  visible: (i: number) => ({
+    opacity: 1,
+    y: 0,
+    transition: { duration: 0.6, delay: i * 0.1, ease: [0.25, 0.4, 0.25, 1] },
+  }),
+};
 
 const AboutSection = () => {
   return (
     <section id="about" className="px-6 md:px-12 lg:px-20 py-16 md:py-24">
       <div className="max-w-6xl mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-[200px_1fr] gap-8 md:gap-16">
-          <div>
+          <motion.div
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            viewport={{ once: true, margin: "-60px" }}
+            transition={{ duration: 0.5 }}
+          >
             <p className="section-header">currently</p>
-          </div>
+          </motion.div>
 
           <div className="space-y-8">
             {[
@@ -27,15 +41,23 @@ const AboutSection = () => {
                 number: "04",
                 text: "sharing process and thinking through occasional case studies. always learning, always iterating.",
               },
-            ].map((item) => (
-              <div key={item.number} className="flex gap-6">
+            ].map((item, i) => (
+              <motion.div
+                key={item.number}
+                custom={i}
+                variants={fadeUp}
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true, margin: "-40px" }}
+                className="flex gap-6"
+              >
                 <span className="section-number shrink-0 pt-0.5">
                   {item.number}
                 </span>
                 <p className="text-base md:text-lg leading-relaxed text-foreground/80">
                   {item.text}
                 </p>
-              </div>
+              </motion.div>
             ))}
           </div>
         </div>
@@ -43,9 +65,14 @@ const AboutSection = () => {
         <div className="divider my-16" />
 
         <div className="grid grid-cols-1 md:grid-cols-[200px_1fr] gap-8 md:gap-16">
-          <div>
+          <motion.div
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            viewport={{ once: true, margin: "-60px" }}
+            transition={{ duration: 0.5 }}
+          >
             <p className="section-header">background</p>
-          </div>
+          </motion.div>
 
           <div className="space-y-6">
             {[
@@ -65,15 +92,23 @@ const AboutSection = () => {
                 number: "04",
                 text: "tools of choice: Figma, Framer, After Effects, and a healthy obsession with typography and spacing.",
               },
-            ].map((item) => (
-              <div key={item.number} className="flex gap-6">
+            ].map((item, i) => (
+              <motion.div
+                key={item.number}
+                custom={i}
+                variants={fadeUp}
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true, margin: "-40px" }}
+                className="flex gap-6"
+              >
                 <span className="section-number shrink-0 pt-0.5">
                   {item.number}
                 </span>
                 <p className="text-base md:text-lg leading-relaxed text-foreground/80">
                   {item.text}
                 </p>
-              </div>
+              </motion.div>
             ))}
           </div>
         </div>

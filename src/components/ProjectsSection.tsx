@@ -1,4 +1,5 @@
 import { ArrowUpRight } from "lucide-react";
+import { motion } from "framer-motion";
 import { projects } from "@/data/projects";
 
 const ProjectsSection = () => {
@@ -6,17 +7,26 @@ const ProjectsSection = () => {
     <section id="work" className="px-6 md:px-12 lg:px-20 py-16 md:py-24">
       <div className="max-w-6xl mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-[200px_1fr] gap-8 md:gap-16">
-          <div>
+          <motion.div
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            viewport={{ once: true, margin: "-60px" }}
+            transition={{ duration: 0.5 }}
+          >
             <p className="section-header">selected work</p>
-          </div>
+          </motion.div>
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-5">
-            {projects.map((project) => (
-              <a
+            {projects.map((project, i) => (
+              <motion.a
                 key={project.id}
                 href={project.link || "#"}
                 target="_blank"
                 rel="noopener noreferrer"
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true, margin: "-40px" }}
+                transition={{ duration: 0.6, delay: i * 0.08, ease: [0.25, 0.4, 0.25, 1] }}
                 className="project-card card-hover group block"
               >
                 <div className={`${project.colorClass} aspect-[16/10] overflow-hidden`}>
@@ -48,7 +58,7 @@ const ProjectsSection = () => {
                     ))}
                   </div>
                 </div>
-              </a>
+              </motion.a>
             ))}
           </div>
         </div>

@@ -27,7 +27,7 @@ const HeroSection = () => {
           transition={{ duration: 1, delay: 0.8 }}
           className="text-primary/60 text-sm md:text-base mb-6 tracking-[5px] uppercase font-sans"
         >
-          portfolio of Jenna
+          tech · health · equity
         </motion.p>
 
         <motion.h1
@@ -36,7 +36,7 @@ const HeroSection = () => {
           transition={{ duration: 1.2, delay: 1, ease: [0.25, 0.4, 0.25, 1] }}
           className="text-6xl md:text-8xl lg:text-9xl font-light tracking-tight leading-[0.95] text-foreground/80 mb-3 font-display"
         >
-          Through the
+          Where care
         </motion.h1>
 
         <motion.h1
@@ -45,18 +45,18 @@ const HeroSection = () => {
           transition={{ duration: 1.2, delay: 1.15, ease: [0.25, 0.4, 0.25, 1] }}
           className="text-6xl md:text-8xl lg:text-9xl tracking-tight leading-[0.95] text-primary mb-10 font-display italic"
         >
-          lilies.
+          blooms.
         </motion.h1>
 
         <motion.p
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 1.35 }}
-          className="text-foreground/30 text-base md:text-lg max-w-sm mx-auto leading-relaxed font-sans"
+          className="text-foreground/30 text-base md:text-lg max-w-md mx-auto leading-relaxed font-sans"
         >
-          I design experiences that unfurl —
+          Building bridges between technology and
           <br />
-          elegant, organic, alive.
+          public health to nurture equitable care.
         </motion.p>
 
         <motion.div
@@ -77,7 +77,7 @@ const HeroSection = () => {
         </motion.div>
       </div>
 
-      {/* Floating calla lily petal shapes — pink/cream organic blobs */}
+      {/* Floating calla lily petal shapes */}
       <motion.div
         animate={{ y: [0, -30, 0], rotate: [0, 15, 0] }}
         transition={{ duration: 14, repeat: Infinity, ease: "easeInOut" }}
@@ -99,7 +99,7 @@ const HeroSection = () => {
         className="absolute bottom-[35%] right-[25%] w-32 h-48 bg-[hsl(350_35%_78%/0.04)] blur-3xl calla-petal"
       />
 
-      {/* Vertical stem lines — organic green */}
+      {/* Vertical stem lines */}
       <motion.div
         initial={{ scaleY: 0 }}
         animate={{ scaleY: 1 }}

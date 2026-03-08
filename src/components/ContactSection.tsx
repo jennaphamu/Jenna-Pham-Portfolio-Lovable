@@ -1,5 +1,6 @@
 import { useState, FormEvent } from "react";
 import { ArrowUpRight } from "lucide-react";
+import { motion } from "framer-motion";
 import { toast } from "sonner";
 
 const ContactSection = () => {
@@ -23,12 +24,22 @@ const ContactSection = () => {
     <section id="contact" className="px-6 md:px-12 lg:px-20 py-16 md:py-24">
       <div className="max-w-6xl mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-[200px_1fr] gap-8 md:gap-16">
-          <div>
+          <motion.div
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            viewport={{ once: true, margin: "-60px" }}
+            transition={{ duration: 0.5 }}
+          >
             <p className="section-header">get in touch</p>
-          </div>
+          </motion.div>
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16">
-            <div>
+            <motion.div
+              initial={{ opacity: 0, y: 24 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, margin: "-40px" }}
+              transition={{ duration: 0.6, ease: [0.25, 0.4, 0.25, 1] }}
+            >
               <p className="text-base md:text-lg leading-relaxed text-foreground/70 mb-6">
                 have a project in mind, need a designer for your team, or just
                 want to chat about type and pixels? i'd love to hear from you.
@@ -42,9 +53,16 @@ const ContactSection = () => {
                   <ArrowUpRight className="w-3 h-3" />
                 </a>
               </div>
-            </div>
+            </motion.div>
 
-            <form onSubmit={handleSubmit} className="space-y-6">
+            <motion.form
+              onSubmit={handleSubmit}
+              className="space-y-6"
+              initial={{ opacity: 0, y: 24 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, margin: "-40px" }}
+              transition={{ duration: 0.6, delay: 0.1, ease: [0.25, 0.4, 0.25, 1] }}
+            >
               <input
                 type="text"
                 placeholder="name"
@@ -77,7 +95,7 @@ const ContactSection = () => {
                 {isSubmitting ? "sending..." : "send message"}
                 {!isSubmitting && <ArrowUpRight className="w-3 h-3" />}
               </button>
-            </form>
+            </motion.form>
           </div>
         </div>
       </div>

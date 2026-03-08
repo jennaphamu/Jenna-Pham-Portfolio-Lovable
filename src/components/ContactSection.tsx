@@ -18,30 +18,28 @@ const ContactSection = () => {
   };
 
   const inputStyles =
-    "w-full bg-transparent border-0 border-b border-foreground/20 text-foreground placeholder:text-foreground/30 text-sm focus:outline-none focus:border-primary pb-3 pt-1 transition-colors";
+    "w-full bg-transparent border-0 border-b border-primary/20 text-foreground placeholder:text-foreground/25 text-sm focus:outline-none focus:border-primary/50 pb-3 pt-1 transition-colors duration-300";
 
   return (
     <section id="contact" className="px-6 md:px-12 lg:px-20 py-20 md:py-32">
       <div className="max-w-3xl mx-auto text-center">
-        <motion.h2
+        <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-60px" }}
           transition={{ duration: 0.6 }}
-          className="text-3xl md:text-4xl font-bold tracking-tight mb-6"
+          className="mb-12"
         >
-          Let's work together
-        </motion.h2>
+          <p className="section-header">reach out</p>
+          <h2 className="text-4xl md:text-5xl font-display font-light tracking-tight mb-6">
+            Let's grow something
+          </h2>
+          <p className="text-base md:text-lg text-foreground/50 leading-relaxed max-w-lg mx-auto font-display italic">
+            Have a project in mind? Let's plant the seed together.
+          </p>
+        </motion.div>
 
-        <motion.p
-          initial={{ opacity: 0, y: 16 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, margin: "-40px" }}
-          transition={{ duration: 0.6, delay: 0.1 }}
-          className="text-base md:text-lg text-foreground/60 leading-relaxed mb-12 max-w-lg mx-auto"
-        >
-          Have a project in mind or just want to chat about type and pixels? I'd love to hear from you.
-        </motion.p>
+        <div className="stem-line h-12 mb-12" />
 
         <motion.form
           onSubmit={handleSubmit}
@@ -75,11 +73,11 @@ const ContactSection = () => {
             onChange={(e) => setForm({ ...form, message: e.target.value })}
             className={`${inputStyles} resize-none`}
           />
-          <div className="text-center pt-2">
+          <div className="text-center pt-4">
             <button
               type="submit"
               disabled={isSubmitting}
-              className="text-sm font-medium border border-foreground/20 rounded-full px-6 py-2.5 hover:bg-foreground hover:text-background transition-all duration-300 disabled:opacity-50 inline-flex items-center gap-2"
+              className="text-sm border border-primary/30 rounded-full px-7 py-3 hover:bg-primary hover:text-primary-foreground transition-all duration-500 disabled:opacity-50 inline-flex items-center gap-2"
             >
               {isSubmitting ? "sending..." : "send message"}
               {!isSubmitting && <ArrowUpRight className="w-3.5 h-3.5" />}
@@ -92,7 +90,7 @@ const ContactSection = () => {
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
           transition={{ duration: 0.5, delay: 0.3 }}
-          className="mt-12 text-sm text-foreground/40"
+          className="mt-12 text-sm text-foreground/30"
         >
           <a href="mailto:hello@example.com" className="link-arrow inline-flex items-center gap-1">
             hello@example.com

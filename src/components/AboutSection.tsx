@@ -13,15 +13,21 @@ const AboutSection = () => {
   return (
     <section id="about" className="px-6 md:px-12 lg:px-20 py-20 md:py-32">
       <div className="max-w-4xl mx-auto text-center">
-        <motion.h2
+        <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-60px" }}
           transition={{ duration: 0.6 }}
-          className="text-3xl md:text-4xl font-bold tracking-tight mb-16"
+          className="mb-20"
         >
-          About
-        </motion.h2>
+          <p className="section-header">the gardener</p>
+          <h2 className="text-4xl md:text-5xl font-display font-light tracking-tight">
+            About
+          </h2>
+        </motion.div>
+
+        {/* Stem line decorative element */}
+        <div className="stem-line h-16 mb-12" />
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 text-left mb-20">
           <motion.div
@@ -48,10 +54,10 @@ const AboutSection = () => {
                 viewport={{ once: true, margin: "-40px" }}
                 className="flex gap-4"
               >
-                <span className="font-mono text-sm text-foreground/30 shrink-0 pt-0.5">
+                <span className="font-mono text-sm text-primary/40 shrink-0 pt-0.5">
                   0{i + 1}
                 </span>
-                <p className="text-base leading-relaxed text-foreground/70">
+                <p className="text-base leading-relaxed text-foreground/60">
                   {text}
                 </p>
               </motion.div>
@@ -59,7 +65,9 @@ const AboutSection = () => {
           </div>
         </div>
 
+        <div className="stem-line h-12 mb-12" />
         <div className="divider mb-20" />
+        <div className="stem-line h-12 mb-12" />
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 text-left">
           <motion.div
@@ -68,7 +76,7 @@ const AboutSection = () => {
             viewport={{ once: true, margin: "-40px" }}
             transition={{ duration: 0.6 }}
           >
-            <p className="section-header">background</p>
+            <p className="section-header">roots</p>
           </motion.div>
           <div className="space-y-6">
             {[
@@ -86,10 +94,10 @@ const AboutSection = () => {
                 viewport={{ once: true, margin: "-40px" }}
                 className="flex gap-4"
               >
-                <span className="font-mono text-sm text-foreground/30 shrink-0 pt-0.5">
+                <span className="font-mono text-sm text-primary/40 shrink-0 pt-0.5">
                   0{i + 1}
                 </span>
-                <p className="text-base leading-relaxed text-foreground/70">
+                <p className="text-base leading-relaxed text-foreground/60">
                   {text}
                 </p>
               </motion.div>

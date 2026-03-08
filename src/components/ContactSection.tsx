@@ -1,5 +1,5 @@
 import { useState, FormEvent } from "react";
-import { ArrowRight } from "lucide-react";
+import { ArrowUpRight } from "lucide-react";
 import { toast } from "sonner";
 
 const ContactSection = () => {
@@ -10,50 +10,46 @@ const ContactSection = () => {
     e.preventDefault();
     setIsSubmitting(true);
     setTimeout(() => {
-      toast.success("Message sent! I'll get back to you soon.");
+      toast.success("message sent! i'll get back to you soon.");
       setForm({ name: "", email: "", message: "" });
       setIsSubmitting(false);
     }, 1000);
   };
 
   const inputStyles =
-    "w-full bg-transparent border-0 border-b-2 border-foreground text-foreground placeholder:text-foreground/50 uppercase text-sm font-bold tracking-wider focus:outline-none focus:border-[hsl(var(--primary-hover))] pb-2 transition-colors";
+    "w-full bg-transparent border-0 border-b border-foreground/20 text-foreground placeholder:text-foreground/30 text-sm focus:outline-none focus:border-foreground/60 pb-3 pt-1 transition-colors";
 
   return (
-    <section id="contact" className="px-5 md:px-20 py-12 md:py-20">
-      <div className="max-w-5xl mx-auto">
-        <div className="bg-[hsl(var(--primary))] rounded-[var(--radius)] border-2 border-foreground p-8 md:p-14">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-16">
-            {/* Left */}
+    <section id="contact" className="px-6 md:px-12 lg:px-20 py-16 md:py-24">
+      <div className="max-w-6xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-[200px_1fr] gap-8 md:gap-16">
+          <div>
+            <p className="section-header">get in touch</p>
+          </div>
+
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16">
+            {/* Left — text */}
             <div>
-              <h2 className="heading-lg mb-4">LET'S CONNECT</h2>
-              <p className="font-serif text-foreground/80 leading-relaxed mb-6">
-                Whether you have a research collaboration in mind, a project idea,
-                or just want to say hello — I'd love to hear from you.
+              <p className="text-base md:text-lg leading-relaxed text-foreground/70 mb-6">
+                interested in collaborating on research, have a project idea, or
+                just want to say hello? i'd love to hear from you.
               </p>
-              <div className="space-y-2 font-serif text-sm">
-                <p>
-                  <span className="font-bold uppercase font-sans text-xs tracking-wider">
-                    Email:{" "}
-                  </span>
-                  <a href="mailto:hello@example.com" className="underline">
-                    hello@example.com
-                  </a>
-                </p>
-                <p>
-                  <span className="font-bold uppercase font-sans text-xs tracking-wider">
-                    Location:{" "}
-                  </span>
-                  Your City, Country
-                </p>
+              <div className="space-y-2 text-sm">
+                <a
+                  href="mailto:hello@example.com"
+                  className="link-arrow inline-flex items-center gap-1"
+                >
+                  hello@example.com
+                  <ArrowUpRight className="w-3 h-3" />
+                </a>
               </div>
             </div>
 
-            {/* Form */}
+            {/* Right — form */}
             <form onSubmit={handleSubmit} className="space-y-6">
               <input
                 type="text"
-                placeholder="NAME"
+                placeholder="name"
                 required
                 value={form.name}
                 onChange={(e) => setForm({ ...form, name: e.target.value })}
@@ -61,14 +57,14 @@ const ContactSection = () => {
               />
               <input
                 type="email"
-                placeholder="EMAIL"
+                placeholder="email"
                 required
                 value={form.email}
                 onChange={(e) => setForm({ ...form, email: e.target.value })}
                 className={inputStyles}
               />
               <textarea
-                placeholder="MESSAGE"
+                placeholder="message"
                 required
                 rows={4}
                 value={form.message}
@@ -78,10 +74,10 @@ const ContactSection = () => {
               <button
                 type="submit"
                 disabled={isSubmitting}
-                className="btn-transparent disabled:opacity-50 flex items-center gap-2"
+                className="text-sm font-medium underline underline-offset-4 decoration-foreground/30 hover:decoration-foreground transition-all disabled:opacity-50 inline-flex items-center gap-1"
               >
-                {isSubmitting ? "SENDING..." : "SEND MESSAGE"}
-                {!isSubmitting && <ArrowRight className="w-4 h-4" />}
+                {isSubmitting ? "sending..." : "send message"}
+                {!isSubmitting && <ArrowUpRight className="w-3 h-3" />}
               </button>
             </form>
           </div>

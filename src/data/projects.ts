@@ -10,6 +10,17 @@ export interface Project {
 
 export const projects: Project[] = [
   {
+    id: "7",
+    title: "Stanford University School of Medicine",
+    description:
+      "Residency Coordinator for the Department of Anesthesiology, Perioperative and Pain Medicine — improving program operations through data systems (MedHub, Oracle), reducing procurement costs by 40%, and experimenting with AI tools to streamline administrative workflows.",
+    tags: ["Health Operations", "AI & Automation", "Data Systems"],
+    image:
+      "https://images.unsplash.com/photo-1559757175-5700dde675bc?w=800&h=500&fit=crop",
+    link: "#",
+    colorClass: "bg-card",
+  },
+  {
     id: "1",
     title: "UCSF Oral & Maxillofacial Surgery",
     description:

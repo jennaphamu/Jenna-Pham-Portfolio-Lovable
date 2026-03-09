@@ -9,26 +9,28 @@ const Header = () => {
       transition={{ duration: 0.8, delay: 0.2 }}
       className="fixed top-0 left-0 right-0 z-50"
     >
-      <div className="px-6 md:px-12 lg:px-20 py-5">
-        <div className="flex items-center justify-between max-w-7xl mx-auto">
-          <Link to="/" className="text-lg tracking-tight text-foreground/70 hover:text-primary transition-colors font-display italic">
-            Jenna
-          </Link>
+      <div className="px-6 md:px-12 lg:px-20 py-4">
+        <div className="glass-card rounded-full px-6 py-3 max-w-7xl mx-auto shadow-sm">
+          <div className="flex items-center justify-between">
+            <Link to="/" className="text-lg tracking-tight text-foreground/70 hover:text-primary transition-colors font-display italic">
+              Jenna
+            </Link>
 
-          <nav className="flex items-center gap-6 md:gap-8">
-            <a href="#work" className="text-sm text-foreground/40 hover:text-primary/80 transition-colors duration-300">
-              work
-            </a>
-            <a href="#about" className="text-sm text-foreground/40 hover:text-primary/80 transition-colors duration-300">
-              about
-            </a>
-            <a
-              href="#contact"
-              className="text-sm text-primary/70 border border-primary/20 rounded-full px-4 py-1.5 hover:bg-primary/5 hover:border-primary/40 transition-all duration-300"
-            >
-              contact
-            </a>
-          </nav>
+            <nav className="flex items-center gap-6 md:gap-8">
+              <a href="#work" className="text-sm text-foreground/50 hover:text-primary transition-colors duration-300">
+                work
+              </a>
+              <a href="#about" className="text-sm text-foreground/50 hover:text-primary transition-colors duration-300">
+                about
+              </a>
+              <a
+                href="#contact"
+                className="text-sm text-primary/80 border border-primary/25 rounded-full px-4 py-1.5 hover:bg-primary/10 hover:border-primary/40 transition-all duration-300"
+              >
+                contact
+              </a>
+            </nav>
+          </div>
         </div>
       </div>
     </motion.header>

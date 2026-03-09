@@ -92,8 +92,8 @@ const ContactSection = () => {
           transition={{ duration: 0.5, delay: 0.3 }}
           className="mt-12 text-sm text-foreground/35"
         >
-          <a href="mailto:jenna@example.com" className="link-arrow inline-flex items-center gap-1">
-            jenna@example.com
+          <a href="mailto:jennaphamu@gmail.com" className="link-arrow inline-flex items-center gap-1">
+            jennaphamu@gmail.com
             <ArrowUpRight className="w-3 h-3" />
           </a>
         </motion.div>

@@ -17,15 +17,22 @@ const Footer = () => {
               © {new Date().getFullYear()} Jenna Pham
             </p>
             <div className="flex items-center gap-6">
-              {["dribbble", "behance", "linkedin", "twitter"].map((link) => (
-                <a
-                  key={link}
-                  href="#"
-                  className="text-xs text-foreground/35 hover:text-primary transition-colors duration-300"
-                >
-                  {link}
-                </a>
-              ))}
+              <a
+                href="https://linkedin.com/in/yourprofile"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-xs text-foreground/35 hover:text-primary transition-colors duration-300"
+              >
+                linkedin
+              </a>
+              <a
+                href="https://github.com/yourprofile"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-xs text-foreground/35 hover:text-primary transition-colors duration-300"
+              >
+                github
+              </a>
             </div>
           </div>
         </div>

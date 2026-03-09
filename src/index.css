@@ -181,7 +181,7 @@
     @apply rounded-2xl overflow-hidden transition-all duration-500;
   }
 
-  /* Hero gradient — deep forest canopy at night */
+  /* Hero gradient — soft whimsical wash */
   .hero-gradient {
     background: linear-gradient(
       170deg,
@@ -189,6 +189,14 @@
       hsl(var(--hero-via)) 45%,
       hsl(var(--hero-to)) 100%
     );
+  }
+
+  /* Frosted glass card */
+  .glass-card {
+    background: hsl(var(--glass-bg));
+    backdrop-filter: blur(var(--glass-blur));
+    -webkit-backdrop-filter: blur(var(--glass-blur));
+    border: 1px solid hsl(var(--glass-border));
   }
 
   /* Noise texture overlay */

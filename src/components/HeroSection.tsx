@@ -1,7 +1,19 @@
-import { motion } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
+import { useState, useEffect } from "react";
 import callaLily from "@/assets/calla-lily.jpg";
 
+const rotatingWords = ["Wealth.", "Freedom.", "Power.", "Joy.", "Purpose.", "Everything."];
+
 const HeroSection = () => {
+  const [wordIndex, setWordIndex] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setWordIndex((prev) => (prev + 1) % rotatingWords.length);
+    }, 2500);
+    return () => clearInterval(interval);
+  }, []);
+
   return (
     <section className="hero-gradient noise-overlay relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Central calla lily image — soft, dreamy focal point */}
@@ -39,14 +51,20 @@ const HeroSection = () => {
 
         </motion.h1>
 
-        <motion.h1
-          initial={{ opacity: 0, y: 50 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1.2, delay: 1.15, ease: [0.25, 0.4, 0.25, 1] }}
-          className="text-6xl md:text-8xl lg:text-9xl tracking-tight leading-[0.95] text-primary mb-10 font-display italic">Wealth.
-
-
-        </motion.h1>
+        <div className="h-[1.1em] relative overflow-hidden text-6xl md:text-8xl lg:text-9xl tracking-tight leading-[0.95] mb-10 font-display italic">
+          <AnimatePresence mode="wait">
+            <motion.h1
+              key={rotatingWords[wordIndex]}
+              initial={{ opacity: 0, y: 40 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: -40 }}
+              transition={{ duration: 0.5, ease: [0.25, 0.4, 0.25, 1] }}
+              className="text-primary absolute inset-0 text-center"
+            >
+              {rotatingWords[wordIndex]}
+            </motion.h1>
+          </AnimatePresence>
+        </div>
 
         <motion.p
           initial={{ opacity: 0, y: 20 }}

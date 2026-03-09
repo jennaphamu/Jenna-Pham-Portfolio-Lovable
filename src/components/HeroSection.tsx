@@ -9,10 +9,14 @@ const HeroSection = () => {
   const [showWord, setShowWord] = useState(false);
 
   useEffect(() => {
+    const showTimer = setTimeout(() => setShowWord(true), 2000);
     const interval = setInterval(() => {
       setWordIndex((prev) => (prev + 1) % rotatingWords.length);
     }, 3000);
-    return () => clearInterval(interval);
+    return () => {
+      clearTimeout(showTimer);
+      clearInterval(interval);
+    };
   }, []);
 
   return (

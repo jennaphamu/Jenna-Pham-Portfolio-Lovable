@@ -80,9 +80,9 @@ const AboutSection = () => {
           <div className="space-y-6">
             {[
             "UC Irvine – Paul Merage School of Business, B.A. in Business Administration with emphasis in Information Systems & Organization Management.",
-            "built data visualizations merging global health and pollution datasets — awarded Best Visualization at the Data@UCI Atlantis Datathon.",
             "served communities across the Bay Area through patient navigation, youth mentorship, and nonprofit health operations.",
-            "taught English in Vietnam and Cambodia, designing culturally immersive lessons for rural students."].
+            "taught English in Vietnam and Cambodia, designing culturally immersive lessons for rural students.",
+            "built data visualizations merging global health and pollution datasets — awarded Best Visualization at the Data@UCI Atlantis Datathon."].
             map((text, i) =>
             <motion.div
               key={i}

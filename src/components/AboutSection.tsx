@@ -39,10 +39,10 @@ const AboutSection = () => {
           </motion.div>
           <div className="space-y-6">
             {[
-            "residency coordinator at Stanford University School of Medicine, Department of Anesthesiology, Perioperative and Pain Medicine — since November 2025.",
-            "improving program operations through data systems (MedHub, Oracle) and workflow optimization.",
-            "using cost analysis and vendor coordination to reduce onboarding procurement costs by 40% across a 175-resident order.",
-            "experimenting with AI tools and automation to streamline information retrieval and administrative workflows."].
+            "coordinating residency programs at Stanford University School of Medicine, Department of Anesthesiology, Perioperative and Pain Medicine — optimizing operations, data systems, and AI-enabled workflows.",
+            "bridging technology and public health — using data analytics, Python, and digital tools to improve healthcare access and equity.",
+            "supporting cancer care nonprofits as a digital health operations analyst, digitizing systems and expanding outreach.",
+            "advocating for underserved communities through patient navigation and Vietnamese-language health interpretation."].
             map((text, i) =>
             <motion.div
               key={i}
@@ -80,9 +80,9 @@ const AboutSection = () => {
           <div className="space-y-6">
             {[
             "UC Irvine – Paul Merage School of Business, B.A. in Business Administration with emphasis in Information Systems & Organization Management.",
-            "built data visualizations merging global health and pollution datasets — awarded Best Visualization at the Data@UCI Atlantis Datathon.",
             "served communities across the Bay Area through patient navigation, youth mentorship, and nonprofit health operations.",
-            "taught English in Vietnam and Cambodia, designing culturally immersive lessons for rural students."].
+            "taught English in Vietnam and Cambodia, designing culturally immersive lessons for rural students.",
+            "built data visualizations merging global health and pollution datasets — awarded Best Visualization at the Data@UCI Atlantis Datathon."].
             map((text, i) =>
             <motion.div
               key={i}

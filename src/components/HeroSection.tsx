@@ -51,14 +51,20 @@ const HeroSection = () => {
 
         </motion.h1>
 
-        <motion.h1
-          initial={{ opacity: 0, y: 50 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1.2, delay: 1.15, ease: [0.25, 0.4, 0.25, 1] }}
-          className="text-6xl md:text-8xl lg:text-9xl tracking-tight leading-[0.95] text-primary mb-10 font-display italic">Wealth.
-
-
-        </motion.h1>
+        <div className="h-[1.1em] relative overflow-hidden text-6xl md:text-8xl lg:text-9xl tracking-tight leading-[0.95] mb-10 font-display italic">
+          <AnimatePresence mode="wait">
+            <motion.h1
+              key={rotatingWords[wordIndex]}
+              initial={{ opacity: 0, y: 40 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: -40 }}
+              transition={{ duration: 0.5, ease: [0.25, 0.4, 0.25, 1] }}
+              className="text-primary absolute inset-0 text-center"
+            >
+              {rotatingWords[wordIndex]}
+            </motion.h1>
+          </AnimatePresence>
+        </div>
 
         <motion.p
           initial={{ opacity: 0, y: 20 }}

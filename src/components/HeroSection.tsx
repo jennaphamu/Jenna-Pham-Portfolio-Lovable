@@ -5,6 +5,15 @@ import callaLily from "@/assets/calla-lily.jpg";
 const rotatingWords = ["Wealth.", "Freedom.", "Power.", "Joy.", "Purpose.", "Everything."];
 
 const HeroSection = () => {
+  const [wordIndex, setWordIndex] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setWordIndex((prev) => (prev + 1) % rotatingWords.length);
+    }, 2500);
+    return () => clearInterval(interval);
+  }, []);
+
   return (
     <section className="hero-gradient noise-overlay relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Central calla lily image — soft, dreamy focal point */}

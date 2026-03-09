@@ -2,7 +2,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { useState, useEffect } from "react";
 import callaLily from "@/assets/calla-lily.jpg";
 
-const rotatingWords = ["Wealth.", "Freedom.", "Power.", "Joy.", "Purpose.", "Everything."];
+const rotatingWords = ["Wealth.", "Freedom.", "Power.", "Joy.", "Purpose.", "Life."];
 
 const HeroSection = () => {
   const [wordIndex, setWordIndex] = useState(0);

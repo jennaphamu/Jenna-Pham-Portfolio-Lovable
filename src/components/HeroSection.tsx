@@ -70,11 +70,9 @@ const HeroSection = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 1.35 }}
-          className="text-foreground/45 text-base md:text-lg max-w-md mx-auto leading-relaxed font-sans">building bridges between technology and health
-
-
+          className="text-foreground/45 text-base md:text-lg max-w-md mx-auto leading-relaxed font-sans">building bridges between technology
           <br />
-          public health to nurture equitable care.
+          and health for equitable care
         </motion.p>
 
         <motion.div

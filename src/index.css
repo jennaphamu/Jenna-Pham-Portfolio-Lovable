@@ -6,119 +6,128 @@
 
 @layer base {
   :root {
-    /* Calla lily forest — deep dark with pink/cream/green */
-    --background: 160 10% 4%;
-    --foreground: 40 30% 90%;
+    /* Light whimsical — soft pastels with glass transparency */
+    --background: 40 40% 97%;
+    --foreground: 200 15% 20%;
 
-    --card: 160 8% 8%;
-    --card-foreground: 40 30% 90%;
+    --card: 0 0% 100%;
+    --card-foreground: 200 15% 20%;
 
-    --primary: 340 45% 65%;
-    --primary-foreground: 160 10% 4%;
-    --primary-hover: 340 50% 55%;
+    --primary: 340 55% 60%;
+    --primary-foreground: 0 0% 100%;
+    --primary-hover: 340 60% 50%;
 
-    --secondary: 85 25% 35%;
-    --secondary-foreground: 40 30% 90%;
-    --secondary-hover: 85 30% 28%;
+    --secondary: 140 30% 50%;
+    --secondary-foreground: 0 0% 100%;
+    --secondary-hover: 140 35% 42%;
 
-    /* Calla lily accents */
-    --accent-rose: 340 50% 70%;
-    --accent-cream: 40 40% 85%;
-    --accent-blush: 350 35% 78%;
-    --accent-stem: 100 30% 30%;
+    /* Whimsical accents */
+    --accent-rose: 340 60% 75%;
+    --accent-cream: 40 50% 92%;
+    --accent-blush: 350 45% 85%;
+    --accent-stem: 140 35% 55%;
 
-    --hero-from: 160 15% 3%;
-    --hero-via: 140 12% 6%;
-    --hero-to: 100 10% 4%;
+    --hero-from: 40 45% 96%;
+    --hero-via: 340 30% 95%;
+    --hero-to: 180 25% 95%;
 
-    --card-yellow: 40 35% 20%;
-    --card-purple: 340 20% 15%;
-    --card-magenta: 350 25% 18%;
-    --card-blue: 160 15% 12%;
-    --card-coral: 340 30% 20%;
-    --card-mint: 100 20% 14%;
-    --card-orange: 40 25% 18%;
-    --card-lavender: 340 15% 14%;
+    --card-yellow: 45 80% 92%;
+    --card-purple: 280 40% 92%;
+    --card-magenta: 340 45% 93%;
+    --card-blue: 200 50% 93%;
+    --card-coral: 10 60% 93%;
+    --card-mint: 160 40% 92%;
+    --card-orange: 30 60% 92%;
+    --card-lavender: 270 40% 93%;
 
-    --muted: 160 5% 15%;
-    --muted-foreground: 40 15% 55%;
+    --muted: 40 20% 93%;
+    --muted-foreground: 200 10% 50%;
 
-    --success: 100 40% 40%;
-    --warning: 40 70% 50%;
-    --error: 0 60% 50%;
-    --info: 180 30% 40%;
+    --success: 140 50% 45%;
+    --warning: 40 80% 55%;
+    --error: 0 65% 55%;
+    --info: 200 50% 50%;
 
-    --border: 160 8% 15%;
-    --input: 160 8% 15%;
-    --ring: 340 45% 65%;
+    --border: 340 20% 88%;
+    --input: 340 15% 90%;
+    --ring: 340 55% 60%;
     --radius: 1.25rem;
-    --popover: 160 8% 7%;
-    --popover-foreground: 40 30% 90%;
-    --accent: 160 8% 10%;
-    --accent-foreground: 340 45% 65%;
-    --destructive: 0 60% 50%;
-    --destructive-foreground: 0 0% 98%;
-    --chart-1: 340 45% 65%;
-    --chart-2: 100 25% 35%;
-    --chart-3: 40 40% 85%;
-    --chart-4: 350 35% 78%;
-    --chart-5: 160 10% 40%;
-    --sidebar: 160 8% 6%;
-    --sidebar-foreground: 40 30% 90%;
-    --sidebar-primary: 340 45% 65%;
-    --sidebar-primary-foreground: 160 10% 4%;
-    --sidebar-accent: 100 25% 35%;
-    --sidebar-accent-foreground: 40 30% 90%;
-    --sidebar-border: 160 8% 15%;
-    --sidebar-ring: 340 45% 65%;
-    --shadow-2xs: 0 1px 3px 0px hsl(0 0% 0% / 0.15);
-    --shadow-xs: 0 1px 3px 0px hsl(0 0% 0% / 0.2);
-    --shadow-sm: 0 1px 3px 0px hsl(0 0% 0% / 0.25), 0 1px 2px -1px hsl(0 0% 0% / 0.2);
-    --shadow: 0 1px 3px 0px hsl(0 0% 0% / 0.25), 0 1px 2px -1px hsl(0 0% 0% / 0.2);
-    --shadow-md: 0 2px 6px 0px hsl(0 0% 0% / 0.25), 0 2px 4px -1px hsl(0 0% 0% / 0.2);
-    --shadow-lg: 0 4px 12px 0px hsl(0 0% 0% / 0.25), 0 4px 6px -1px hsl(0 0% 0% / 0.2);
-    --shadow-xl: 0 8px 20px 0px hsl(0 0% 0% / 0.3), 0 8px 10px -1px hsl(0 0% 0% / 0.2);
-    --shadow-2xl: 0 12px 40px 0px hsl(0 0% 0% / 0.4);
+    --popover: 0 0% 100%;
+    --popover-foreground: 200 15% 20%;
+    --accent: 340 25% 95%;
+    --accent-foreground: 340 55% 55%;
+    --destructive: 0 65% 55%;
+    --destructive-foreground: 0 0% 100%;
+    --chart-1: 340 55% 65%;
+    --chart-2: 140 35% 50%;
+    --chart-3: 40 50% 70%;
+    --chart-4: 280 35% 70%;
+    --chart-5: 200 30% 60%;
+    --sidebar: 40 30% 96%;
+    --sidebar-foreground: 200 15% 25%;
+    --sidebar-primary: 340 55% 60%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 140 30% 50%;
+    --sidebar-accent-foreground: 0 0% 100%;
+    --sidebar-border: 340 15% 90%;
+    --sidebar-ring: 340 55% 60%;
+
+    /* Glass effect tokens */
+    --glass-bg: 0 0% 100% / 0.55;
+    --glass-border: 0 0% 100% / 0.6;
+    --glass-blur: 16px;
+
+    --shadow-2xs: 0 1px 3px 0px hsl(340 30% 50% / 0.05);
+    --shadow-xs: 0 1px 3px 0px hsl(340 30% 50% / 0.08);
+    --shadow-sm: 0 1px 3px 0px hsl(340 30% 50% / 0.08), 0 1px 2px -1px hsl(340 30% 50% / 0.06);
+    --shadow: 0 1px 3px 0px hsl(340 30% 50% / 0.1), 0 1px 2px -1px hsl(340 30% 50% / 0.06);
+    --shadow-md: 0 4px 12px 0px hsl(340 30% 50% / 0.08), 0 2px 4px -1px hsl(340 30% 50% / 0.06);
+    --shadow-lg: 0 8px 24px 0px hsl(340 30% 50% / 0.1), 0 4px 8px -1px hsl(340 30% 50% / 0.06);
+    --shadow-xl: 0 16px 40px 0px hsl(340 30% 50% / 0.12), 0 8px 16px -1px hsl(340 30% 50% / 0.06);
+    --shadow-2xl: 0 24px 60px 0px hsl(340 30% 50% / 0.15);
     --tracking-normal: 0em;
     --spacing: 0.25rem;
   }
 
   .dark {
-    --background: 160 10% 4%;
+    --background: 240 10% 6%;
     --foreground: 40 30% 90%;
-    --card: 160 8% 8%;
+    --card: 240 8% 10%;
     --card-foreground: 40 30% 90%;
-    --popover: 160 8% 7%;
+    --popover: 240 8% 9%;
     --popover-foreground: 40 30% 90%;
-    --primary: 340 45% 65%;
-    --primary-foreground: 160 10% 4%;
-    --secondary: 85 25% 35%;
+    --primary: 340 55% 65%;
+    --primary-foreground: 240 10% 4%;
+    --secondary: 140 30% 40%;
     --secondary-foreground: 40 30% 90%;
-    --muted: 160 5% 15%;
+    --muted: 240 5% 18%;
     --muted-foreground: 40 15% 55%;
-    --accent: 160 8% 10%;
-    --accent-foreground: 340 45% 65%;
+    --accent: 240 8% 14%;
+    --accent-foreground: 340 55% 65%;
     --destructive: 0 60% 50%;
     --destructive-foreground: 0 0% 98%;
-    --border: 160 8% 15%;
-    --input: 160 8% 15%;
-    --ring: 340 45% 65%;
-    --hero-from: 160 15% 3%;
-    --hero-via: 140 12% 6%;
-    --hero-to: 100 10% 4%;
-    --chart-1: 340 45% 65%;
-    --chart-2: 100 25% 35%;
-    --chart-3: 40 40% 85%;
-    --chart-4: 350 35% 78%;
-    --chart-5: 160 10% 40%;
-    --sidebar: 160 8% 6%;
+    --border: 240 8% 18%;
+    --input: 240 8% 18%;
+    --ring: 340 55% 65%;
+    --glass-bg: 240 8% 10% / 0.6;
+    --glass-border: 240 8% 20% / 0.5;
+    --glass-blur: 16px;
+    --hero-from: 280 15% 8%;
+    --hero-via: 340 12% 10%;
+    --hero-to: 200 10% 8%;
+    --chart-1: 340 55% 65%;
+    --chart-2: 140 30% 45%;
+    --chart-3: 40 50% 70%;
+    --chart-4: 280 35% 70%;
+    --chart-5: 200 30% 50%;
+    --sidebar: 240 8% 8%;
     --sidebar-foreground: 40 30% 90%;
-    --sidebar-primary: 340 45% 65%;
-    --sidebar-primary-foreground: 160 10% 4%;
-    --sidebar-accent: 100 25% 35%;
-    --sidebar-accent-foreground: 160 8% 10%;
-    --sidebar-border: 160 8% 15%;
-    --sidebar-ring: 340 45% 65%;
+    --sidebar-primary: 340 55% 65%;
+    --sidebar-primary-foreground: 240 10% 4%;
+    --sidebar-accent: 140 30% 40%;
+    --sidebar-accent-foreground: 240 8% 14%;
+    --sidebar-border: 240 8% 18%;
+    --sidebar-ring: 340 55% 65%;
     --shadow-2xs: 0 1px 3px 0px hsl(0 0% 0% / 0.2);
     --shadow-xs: 0 1px 3px 0px hsl(0 0% 0% / 0.25);
     --shadow-sm: 0 1px 3px 0px hsl(0 0% 0% / 0.3), 0 1px 2px -1px hsl(0 0% 0% / 0.25);
@@ -181,7 +190,7 @@
     @apply rounded-2xl overflow-hidden transition-all duration-500;
   }
 
-  /* Hero gradient — deep forest canopy at night */
+  /* Hero gradient — soft whimsical wash */
   .hero-gradient {
     background: linear-gradient(
       170deg,
@@ -189,6 +198,14 @@
       hsl(var(--hero-via)) 45%,
       hsl(var(--hero-to)) 100%
     );
+  }
+
+  /* Frosted glass card */
+  .glass-card {
+    background: hsl(var(--glass-bg));
+    backdrop-filter: blur(var(--glass-blur));
+    -webkit-backdrop-filter: blur(var(--glass-blur));
+    border: 1px solid hsl(var(--glass-border));
   }
 
   /* Noise texture overlay */
@@ -199,10 +216,10 @@
     content: "";
     position: absolute;
     inset: 0;
-    opacity: 0.04;
+    opacity: 0.03;
     background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
     pointer-events: none;
-    mix-blend-mode: soft-light;
+    mix-blend-mode: overlay;
   }
 
   /* Petal shape — calla lily curves */
@@ -217,12 +234,17 @@
 
   /* Stem line decoration */
   .stem-line {
-    @apply w-px bg-secondary/30 mx-auto;
+    @apply w-px bg-primary/15 mx-auto;
   }
 
   /* Glow effect for accents */
   .petal-glow {
-    box-shadow: 0 0 60px 20px hsl(340 45% 65% / 0.08),
-                0 0 120px 40px hsl(340 45% 65% / 0.04);
+    box-shadow: 0 0 60px 20px hsl(340 55% 65% / 0.12),
+                0 0 120px 40px hsl(340 55% 65% / 0.06);
+  }
+
+  /* Whimsical floating dot */
+  .dot-accent {
+    @apply w-2 h-2 rounded-full bg-primary/30;
   }
 }

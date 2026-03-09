@@ -18,7 +18,7 @@ const ContactSection = () => {
   };
 
   const inputStyles =
-    "w-full bg-transparent border-0 border-b border-primary/15 text-foreground placeholder:text-foreground/20 text-sm focus:outline-none focus:border-primary/40 pb-3 pt-1 transition-colors duration-300";
+    "w-full bg-transparent border-0 border-b border-primary/20 text-foreground placeholder:text-foreground/30 text-sm focus:outline-none focus:border-primary/50 pb-3 pt-1 transition-colors duration-300";
 
   return (
     <section id="contact" className="px-6 md:px-12 lg:px-20 py-20 md:py-32">
@@ -31,10 +31,10 @@ const ContactSection = () => {
           className="mb-12"
         >
           <p className="section-header">connect</p>
-          <h2 className="text-4xl md:text-5xl font-display font-light tracking-tight mb-6 text-foreground/90">
+          <h2 className="text-4xl md:text-5xl font-display font-light tracking-tight mb-6 text-foreground/80">
             Let's collaborate
           </h2>
-          <p className="text-base md:text-lg text-foreground/40 leading-relaxed max-w-lg mx-auto font-display italic">
+          <p className="text-base md:text-lg text-foreground/45 leading-relaxed max-w-lg mx-auto font-display italic">
             Interested in health tech, community impact, or data-driven solutions? Let's connect.
           </p>
         </motion.div>
@@ -43,7 +43,7 @@ const ContactSection = () => {
 
         <motion.form
           onSubmit={handleSubmit}
-          className="space-y-6 text-left max-w-md mx-auto"
+          className="glass-card rounded-2xl p-8 md:p-10 space-y-6 text-left max-w-md mx-auto shadow-md"
           initial={{ opacity: 0, y: 24 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-40px" }}
@@ -90,7 +90,7 @@ const ContactSection = () => {
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
           transition={{ duration: 0.5, delay: 0.3 }}
-          className="mt-12 text-sm text-foreground/25"
+          className="mt-12 text-sm text-foreground/35"
         >
           <a href="mailto:hello@example.com" className="link-arrow inline-flex items-center gap-1">
             hello@example.com

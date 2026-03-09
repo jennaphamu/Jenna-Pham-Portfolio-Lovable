@@ -6,6 +6,7 @@ const rotatingWords = ["Wealth.", "Power.", "Freedom.", "Justice.", "Data.", "De
 
 const HeroSection = () => {
   const [wordIndex, setWordIndex] = useState(0);
+  const [showWord, setShowWord] = useState(false);
 
   useEffect(() => {
     const interval = setInterval(() => {

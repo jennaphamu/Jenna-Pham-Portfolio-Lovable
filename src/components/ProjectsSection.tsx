@@ -1,5 +1,4 @@
 import { motion } from "framer-motion";
-import { ArrowUpRight } from "lucide-react";
 import { projects } from "@/data/projects";
 
 const ProjectsSection = () => {
@@ -26,30 +25,30 @@ const ProjectsSection = () => {
               href={project.link || "#"}
               target="_blank"
               rel="noopener noreferrer"
-              initial={{ opacity: 0, y: 50 }}
-              whileInView={{ opacity: 1, y: 0 }}
+              initial={{ opacity: 0, y: 50, scale: 0.98 }}
+              whileInView={{ opacity: 1, y: 0, scale: 1 }}
+              whileHover={{ y: -6, scale: 1.01, rotateX: 2, rotateY: -2 }}
               viewport={{ once: true, margin: "-60px" }}
               transition={{ duration: 0.8, delay: i * 0.08, ease: [0.25, 0.4, 0.25, 1] as const }}
               className="project-card card-hover group block"
             >
-              <div className="aspect-[16/8] md:aspect-[16/7] overflow-hidden rounded-t-2xl">
-                <img
-                  src={project.image}
-                  alt={project.title}
-                  className="w-full h-full object-cover transition-transform duration-[800ms] group-hover:scale-[1.04] opacity-80 group-hover:opacity-100"
-                  loading="lazy"
-                />
-              </div>
-              <div className="glass-card p-6 md:p-8 rounded-b-2xl shadow-md">
-                <div className="flex items-start justify-between gap-4 mb-2">
-                  <h3 className="font-display text-xl md:text-2xl tracking-tight font-medium text-foreground/80">
-                    {project.title}
-                  </h3>
-                  <ArrowUpRight className="w-5 h-5 shrink-0 text-primary/40 group-hover:text-primary transition-colors duration-300 mt-1" />
-                </div>
-                <p className="text-sm md:text-base text-foreground/50 leading-relaxed max-w-2xl">
+              <div className="glass-card p-6 md:p-8 rounded-2xl shadow-md">
+                <h3 className="font-display text-xl md:text-2xl tracking-tight font-medium text-foreground/80 mb-2">
+                  {project.title}
+                </h3>
+                <p className="text-sm md:text-base text-foreground/50 leading-relaxed max-w-2xl mb-4">
                   {project.description}
                 </p>
+                <div className="flex flex-wrap gap-2">
+                  {project.tags.map((tag) => (
+                    <span
+                      key={tag}
+                      className="text-[11px] uppercase tracking-[0.18em] px-3 py-1 rounded-full bg-primary/5 text-foreground/60 border border-primary/10 group-hover:bg-primary/10 group-hover:text-primary/80 group-hover:border-primary/30 transition-colors duration-300"
+                    >
+                      {tag}
+                    </span>
+                  ))}
+                </div>
               </div>
             </motion.a>
           ))}

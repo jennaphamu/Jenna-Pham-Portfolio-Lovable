@@ -25,14 +25,6 @@ const Footer = () => {
               >
                 linkedin
               </a>
-              <a
-                href="https://github.com/jennaphamu"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-xs text-foreground/35 hover:text-primary transition-colors duration-300"
-              >
-                github
-              </a>
             </div>
           </div>
         </div>

@@ -9,12 +9,24 @@ const ContactSection = () => {
 
   const handleSubmit = (e: FormEvent) => {
     e.preventDefault();
+
+    if (form.message.trim().length < 10) {
+      toast.error("could you share a bit more detail in your message?");
+      return;
+    }
+
     setIsSubmitting(true);
-    setTimeout(() => {
-      toast.success("message sent! i'll get back to you soon.");
-      setForm({ name: "", email: "", message: "" });
-      setIsSubmitting(false);
-    }, 1000);
+
+    const subject = encodeURIComponent("New message from your portfolio");
+    const body = encodeURIComponent(
+      `name: ${form.name}\nemail: ${form.email}\n\nmessage:\n${form.message}`,
+    );
+
+    window.location.href = `mailto:jennaphamu@gmail.com?subject=${subject}&body=${body}`;
+
+    toast.success("opening your email app to send the message.");
+    setForm({ name: "", email: "", message: "" });
+    setIsSubmitting(false);
   };
 
   const inputStyles =
@@ -65,19 +77,24 @@ const ContactSection = () => {
             onChange={(e) => setForm({ ...form, email: e.target.value })}
             className={inputStyles}
           />
-          <textarea
-            placeholder="what would you like to discuss?"
-            required
-            rows={4}
-            value={form.message}
-            onChange={(e) => setForm({ ...form, message: e.target.value })}
-            className={`${inputStyles} resize-none`}
-          />
+          <div className="space-y-2">
+            <textarea
+              placeholder="what would you like to discuss?"
+              required
+              rows={4}
+              value={form.message}
+              onChange={(e) => setForm({ ...form, message: e.target.value })}
+              className={`${inputStyles} resize-none`}
+            />
+            <p className="text-[11px] text-foreground/35 text-right">
+              {form.message.length}/500
+            </p>
+          </div>
           <div className="text-center pt-4">
             <button
               type="submit"
               disabled={isSubmitting}
-              className="text-sm border border-primary/25 text-primary/80 rounded-full px-7 py-3 hover:bg-primary hover:text-primary-foreground transition-all duration-500 disabled:opacity-50 inline-flex items-center gap-2"
+              className="text-sm border border-primary/25 text-primary/80 rounded-full px-7 py-3 hover:bg-primary hover:text-primary-foreground transition-all duration-500 disabled:opacity-60 inline-flex items-center gap-2"
             >
               {isSubmitting ? "sending..." : "send message"}
               {!isSubmitting && <ArrowUpRight className="w-3.5 h-3.5" />}

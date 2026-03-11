@@ -1,6 +1,5 @@
 import stanfordImg from "@/assets/stanford-card.jpg";
 import ucsfImg from "@/assets/ucsf-card.jpg";
-import datathonImg from "@/assets/datathon-card.jpg";
 import aaciImg from "@/assets/aaci-card.jpg";
 import baccImg from "@/assets/bacc-card.jpg";
 import mentorshipImg from "@/assets/mentorship-card.jpg";
@@ -34,16 +33,6 @@ export const projects: Project[] = [
       "Coordinating two residency programs across UCSF and affiliates — managing schedules, onboarding, compliance for 40+ residents, and directing a $2M+ budget while growing Instagram reach by 77.8%.",
     tags: ["Health Operations", "Program Coordination", "Budget Management"],
     image: ucsfImg,
-    link: "#",
-    colorClass: "bg-card",
-  },
-  {
-    id: "2",
-    title: "Best Visualization — Data@UCI Datathon",
-    description:
-      "Awarded Best Visualization for merging global datasets on pollution and happiness using Python, Tableau, and Folium — demonstrating data storytelling for environmental health impact.",
-    tags: ["Python", "Tableau", "Data Visualization"],
-    image: datathonImg,
     link: "#",
     colorClass: "bg-card",
   },

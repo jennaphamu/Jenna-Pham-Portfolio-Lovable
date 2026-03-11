@@ -94,33 +94,32 @@ const HeroSection = () => {
         </motion.p>
 
         <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
+          initial={{ opacity: 0, y: 10 }}
+          animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 1.6 }}
           className="mt-14"
         >
-          <div className="flex flex-col sm:flex-row items-center gap-4">
-            <a
-              href="#work"
-              className="glass-card inline-flex items-center gap-3 text-primary/80 text-sm rounded-full px-7 py-3 hover:bg-primary/10 transition-all duration-500 font-sans shadow-sm"
-            >
+          <motion.a
+            href="#work"
+            whileHover={{ y: -3, scale: 1.02 }}
+            whileTap={{ scale: 0.98 }}
+            className="inline-flex items-center justify-center"
+          >
+            <span className="glass-card inline-flex items-center gap-3 text-primary/80 text-sm rounded-full px-7 py-3 hover:bg-primary/10 transition-all duration-500 font-sans shadow-sm">
               explore my work
-              <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <motion.svg
+                className="w-4 h-4"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                initial={false}
+                whileHover={{ x: 4 }}
+                transition={{ duration: 0.3, ease: "easeOut" }}
+              >
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M19 14l-7 7m0 0l-7-7m7 7V3" />
-              </svg>
-            </a>
-            <a
-              href="/resume.pdf"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 text-foreground/50 text-sm rounded-full px-7 py-3 border border-foreground/10 hover:border-primary/30 hover:text-primary/80 transition-all duration-500 font-sans"
-            >
-              download résumé
-              <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
-              </svg>
-            </a>
-          </div>
+              </motion.svg>
+            </span>
+          </motion.a>
         </motion.div>
       </div>
 
